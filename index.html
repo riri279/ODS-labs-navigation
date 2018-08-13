@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/combined.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Government of Ontario | Ontario.ca</title>
+</head>
+
+<body>
+
+    <header ng-class="default" id="ng-view-header" class="ng-isolate-scope">
+        <div class="row">
+            <!-- Logo -->
+            <div class="small-5 medium-3 columns site-logo-print--wrapper ng-scope">
+                <div>
+                    <div class="site-logo-print--wrapper ng-scope">
+                        <a href="index.html">
+                            <span class="iconWrapperLongNoBg iconLogoHeader">
+                                <span class="icon-ontarioLogo" aria-hidden="true">
+                                </span>
+                                <span class="show-for-sr ng-binding">
+                                    Government of Ontario home page
+                                </span>
+                            </span>
+                        </a>
+                        <img class="site-logo-print" ng-src="img/ontario@2x-print.png" alt="Government of Ontario" src="img/ontario@2x-print.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="medium-5 large-6 columns search-panel show-for-medium-up">
+                <form class="search-input-form ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength" accept-charset="utf-8" role="search">
+                    <div class="search row collapse radius" id="search">
+                        <div class="small-8 medium-10 columns">
+                            <div submit="submit" search="search" class="ng-isolate-scope">
+                                <div>
+                                    <div class="clear-input--wrapper ng-scope">
+                                        <input 
+                                            aria-label="Search" autocapitalize="none" role="search" class="no-shadow no-border ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength">
+                                        <span class="clear-input">
+                                            <a tabindex="0">
+                                                <span class="show-for-sr ng-binding">Clear field</span>
+                                                <span aria-hidden="true">×</span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-4 medium-2 columns">
+                            <button class="show-for-medium-up button header-button postfix radius" type="submit">
+                                <span class="iconWrapperNoBg iconSearchHeader">
+                                    <span class="icon-search" aria-hidden="true">
+                                    </span>
+                                    <span class="show-for-sr ng-binding">
+                                        Search
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="small-7 medium-4 large-3 columns">
+                <!-- menu for all screens -->
+                <nav role="navigation" aria-label="Primary navigation">
+                    <button id="menuButton" class="button header-button header-button--menu uppercase right ng-binding ng-isolate-scope" role="button"
+                        aria-haspopup="true" aria-controls="drop-menu" aria-expanded="false">
+                        <span class="iconWrapperNoBgM">
+                            <span class="icon-menu show-for-medium-up" aria-hidden="true"></span>
+                        </span>
+                        Menu
+                    </button>
+
+                    <!-- NAVIGATION WOOOOOO-->
+                </nav>
+
+                <!-- search button for small screens -->
+                <a href="javascript:void(0)" id="show_search" class="show-for-small-only button header-button right ng-isolate-scope" aria-expanded="false">
+                    <span class="iconWrapperNoBgS iconSearchHeader">
+                        <span class="icon-search" aria-hidden="true"></span>
+                        <span class="show-for-sr ng-binding">
+                            Search
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main role="main">
+        <!-- Green Banner -->
+        <div style="background: #006B3F;color: white; padding: 1.5em 0 2em 0">
+            <div class="row ng-scope">
+                <div class="small-12 columns end">
+                    <h1 class="ng-binding" style="color: white;"> Government of Ontario</h1>
+                        <div class="ng-scope">
+                            <p class="no-margin">Ontario.ca is the official website of the Ontario Government.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Icons -->
+        <div class="row">
+            <div class="small-12 columns" style="padding: 1.5em 1em;">
+                <div id="pagebody" class="ng-scope">
+                    <ul class="small-block-grid-1 medium-block-grid-3 stats top-margin">
+                        <li>
+                            <div class="circle--small circle1 text-center">
+                                <a href="/page/jobs-and-employment">
+                                    <span class="home-ico ico-sprite-briefcase top-margin"></span>
+                                </a>
+                            </div>
+    
+                            <div class="stats-caption smaller">
+                                <a href="/page/jobs-and-employment">Jobs + employment</a>
+                            </div>
+    
+                            <p class="no-margin">Jobs, training, employment standards, and employer hiring incentives.</p>
+                        </li>
+
+                        <li>
+	                        <div class="circle--small circle2 text-center">
+                                <a href="/page/driving-and-roads">
+                                    <span class="home-ico ico-sprite-car top-margin"></span>
+                                </a>
+                            </div>
+
+	                        <div class="stats-caption smaller">
+                                <a href="pages/driving-and-roads/driving-and-roads.html">Driving + roads</a>
+                            </div>
+
+	                        <p class="no-margin">Road conditions, licence and registration, Drive Clean, and more.</p>
+                        </li>
+                        
+                        <li>
+                            <div class="circle--small circle3 text-center">
+                                <a href="/page/education-and-training">
+                                    <span class="home-ico ico-sprite-education top-margin"></span>
+                                </a>
+                            </div>
+
+                            <div class="stats-caption smaller">
+                                <a href="/page/education-and-training">Education + training</a>
+                            </div>
+                            
+                            <p class="no-margin">Schools, financial aid, skills training, and child care.</p>
+                        </li>
+
+                        <li>
+                            <div class="circle--small circle4 text-center">
+                                <a href="/page/business-and-economy">
+                                    <span class="home-ico ico-sprite-economy top-margin"></span>
+                                </a>
+                            </div>
+
+                            <div class="stats-caption smaller">
+                                <a href="/page/business-and-economy">Business + economy</a>
+                            </div>
+                        
+                            <p class="no-margin">Business owners, research grants, economic development, trade, and more.</p>
+                        </li>
+
+                        <li>
+                            <div class="circle--small circle5 text-center">
+                                <a href="/page/environment-and-energy">
+                                    <span class="home-ico ico-sprite-leaves top-margin"></span>
+                                </a>
+                            </div>
+
+                            <div class="stats-caption smaller">
+                                <a href="/page/environment-and-energy">Environment + energy</a>
+                            </div>
+                        
+                            <p class="no-margin">Conservation, air, water, fish and wildlife, electricity, and more.</p>
+                        </li>
+
+                        <li>
+                            <div class="circle--small circle6 text-center">
+                                <a href="/page/health-and-wellness">
+                                    <span class="home-ico ico-sprite-healthcross top-margin"></span>
+                                </a>
+                            </div>
+
+                            <div class="stats-caption smaller">
+                                <a href="/page/health-and-wellness">Health + wellness</a>
+                            </div>
+                        
+                            <p class="no-margin">Health card, organ donation, locations, wellness, and disease prevention.</p>
+                        </li>
+                        
+                        <li>
+                            <div class="circle--small circle7 text-center">
+                                <a href="/page/home-and-community">
+                                    <span class="home-ico ico-sprite-houses top-margin"></span>
+                                </a>
+                            </div>
+
+                            <div class="stats-caption smaller">
+                                <a href="/page/home-and-community">Home + community</a>
+                            </div>
+                        
+                            <p class="no-margin">Address change, birth and marriage certificates, tenant protection, and more.</p>
+                        </li>
+
+                        <li>
+                            <div class="circle--small circle8 text-center">
+                                <a href="/page/law-and-safety">
+                                    <span class="home-ico ico-sprite-lawscale top-margin"></span>
+                                </a>
+                            </div>
+
+                            <div class="stats-caption smaller">
+                                <a href="/page/law-and-safety">Law + safety</a>
+                            </div>
+                        
+                            <p class="no-margin">Legal system, consumer rights, courts, police, emergency and victim services.</p>
+                        </li>
+
+                        <li>
+                            <div class="circle--small circle9 text-center">
+                                <a href="/page/rural-and-north">
+                                    <span class="home-ico ico-sprite-trees top-margin"></span>
+                                </a>
+                            </div>
+
+                            <div class="stats-caption smaller">
+                                <a href="/page/rural-and-north">Rural + north</a>
+                            </div>
+                        
+                            <p class="no-margin">Local food, agriculture, communities, and development.</p>
+                        </li>
+
+                        <li>
+                            <div class="circle--small circle10 text-center">
+                                <a href="/page/taxes-and-benefits">
+                                    <span class="home-ico ico-sprite-coins top-margin"></span>
+                                </a>
+                            </div>
+
+                            <div class="stats-caption smaller">
+                                <a href="/page/taxes-and-benefits">Taxes + benefits</a>
+                            </div>
+                        
+                            <p class="no-margin">Financial supports, personal income tax, <abbr title="harmonized sales tax">HST</abbr>, and business taxes.</p>
+                        </li>
+
+                        <li>
+                            <div class="circle--small circle11 text-center">
+                                <a href="/page/travel-and-recreation">
+                                    <span class="home-ico ico-sprite-plane top-margin"></span>
+                                </a>
+                            </div>
+
+                            <div class="stats-caption smaller">
+                                <a href="/page/travel-and-recreation">Travel + recreation</a>
+                            </div>
+                        
+                            <p class="no-margin">Ontario parks, fishing and hunting, and tourism.</p>
+                        </li>
+
+                        <li>
+                            <div class="circle--small circle12 text-center">
+                                <a href="/page/arts-and-culture">
+                                    <span class="home-ico ico-sprite-arts top-margin"></span>
+                                </a>
+                            </div>
+
+                            <div class="stats-caption smaller">
+                                <a href="/page/arts-and-culture">Arts + culture</a>
+                            </div>
+                        
+                            <p class="no-margin">Performances, galleries, museums, grants, and heritage properties.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="thick">
+                <div class="row h3">
+                    <div class="small-12 large-6 columns">
+                        <h2 class="top-margin-double">
+                            <a href="/page/government">Government</a>
+                        </h2>
+                        <p>How government works, Open Government, and the public service. Contact us through a 
+                            <a href="/page/ministries">ministry</a>
+                        .</p>
+                    </div>
+
+                    <div class="small-12 large-6 columns">
+                        <h2>
+                            <a href="pages/service-ontario.html">
+                                <span class="ico-logo-serviceontario"></span>
+                                <span class="show-for-sr">ServiceOntario</span>
+                            </a>
+                        </h2>
+                        <p>Driver licences, plate stickers, health cards, birth certificates and other 
+                            <a href="/page/serviceontario">services</a> 
+                        provided by the Ontario Government.</p>
+                    </div>
+                </div>
+                <div class="clearfix ng-isolate-scope" style="padding: 0 1em">
+                    <small class="right" ng-switch="language">
+                        <span class="ng-binding ng-scope">
+                            Updated: July 16, 2018
+                        </span>
+                    </small>
+                </div>
+                <div class="clearfix ng-isolate-scope" style="padding: 0 1em">
+                    <small class="right" ng-switch="language">
+                        <span class="ng-binding ng-scope">
+                            Published: October 5, 2015
+                        </span>
+                    </small>
+                </div>
+            </div>
+        </div><!-- end main icons-->
+    </main>
+
+    <footer id="footer">     
+        <div class="row">
+            <div class="small-12 columns ng-isolate-scope" id="notices">
+                <ul ng-hide="copyRightOnly" role="navigation" aria-label="Secondary navigation" class="inline-list small top-margin-double no-bottom-margin">
+                    <li class="ng-scope">
+                        <a href="/page/about-ontario" class="ng-binding">
+                            about Ontario
+                        </a>
+                    </li>
+                    <li class="ng-scope">
+                        <a href="/page/accessibility" class="ng-binding">
+                            accessibility
+                        </a>
+                    </li>
+                    <li class="ng-scope">
+                        <a href="http://news.ontario.ca/newsroom/en" class="ng-binding">
+                            news
+                        </a>
+                    </li>
+                    <li class="ng-scope">
+                        <a href="/page/privacy-statement" class="ng-binding">
+                            privacy
+                        </a>
+                    </li>
+                    <li class="ng-scope">
+                        <a href="/page/terms-use" class="ng-binding">
+                            terms of use
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    <small ng-switch="language">
+                        <a href="/page/copyright-information-c-queens-printer-ontario" class="ng-binding">© Queen’s Printer for Ontario, 2012‑18</a>
+                    </small>
+                </p>
+            </div>
+        </div>
+        <div class="footer-swoosh">
+            <div class="footer-swoosh--right"></div>
+        </div>
+    </footer>
+
+    <!-- script references for static template only -->
+    <script src="vendor/foundation-sites/js/vendor/jquery.js"></script>
+    <script src="vendor/foundation-sites/js/foundation.min.js"></script>
+</body>
+</html>
