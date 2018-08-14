@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../css/combined.css">
+    <link rel="stylesheet" href="../css/app.css">
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <title>ServiceOntario | Ontario.ca</title>
 </head>
@@ -93,6 +94,14 @@
     </header>
 
     <main role="main">
+        <nav aria-label="You are here:" role="navigation" class="nav">
+            <ul class="breadcrumbs">
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <span class="show-for-sr">Current: </span> Service Ontario
+                </li>
+            </ul>
+        </nav>
         <div class="row">
             <div class="small-12 columns">
                 <div class="small-8 medium-5 large-3 end columns" style="padding: 1.5rem 0 0;">
@@ -325,6 +334,7 @@
     
         <!-- script references for static template only -->
         <script src="../vendor/foundation-sites/js/vendor/jquery.js"></script>
-        <script src="../vendor/foundation-sites/js/foundation.min.js"></script>
+    <script src="../js/vendor/foundation.js"></script>
+    <script src="../js/app.js"> </script>
     </body>
 </html>
