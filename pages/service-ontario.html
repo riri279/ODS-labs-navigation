@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../css/combined.css">
+    <link rel="stylesheet" href="../css/navigation.css">
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <title>ServiceOntario | Ontario.ca</title>
 </head>
@@ -13,10 +14,20 @@
 <body>
 
     <header ng-class="default" id="ng-view-header" class="ng-isolate-scope">
-        <div class="row">
+        <div class="row-wide">
             <!-- Logo -->
-            <div class="small-5 medium-3 columns site-logo-print--wrapper ng-scope">
-                <div>
+            <div class="small-12 medium-4 columns site-logo-print--wrapper ng-scope">
+                <!-- Mobile Menu -->
+                <div class="show-for-small-only hamburger" id="hamburger-nav">
+                    <div id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p>MENU</p>
+                </div>
+                <div id="logo">
                     <div class="site-logo-print--wrapper ng-scope">
                         <a href="../index.html">
                             <span class="iconWrapperLongNoBg iconLogoHeader">
@@ -38,8 +49,7 @@
                             <div submit="submit" search="search" class="ng-isolate-scope">
                                 <div>
                                     <div class="clear-input--wrapper ng-scope">
-                                        <input 
-                                            aria-label="Search" autocapitalize="none" role="search" class="no-shadow no-border ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength">
+                                        <input aria-label="Search" autocapitalize="none" role="search" class="no-shadow no-border ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength">
                                         <span class="clear-input">
                                             <a tabindex="0">
                                                 <span class="show-for-sr ng-binding">Clear field</span>
@@ -64,267 +74,612 @@
                     </div>
                 </form>
             </div>
-
-            <div class="small-7 medium-4 large-3 columns">
-                <!-- menu for all screens -->
-                <nav role="navigation" aria-label="Primary navigation">
-                    <button id="menuButton" class="button header-button header-button--menu uppercase right ng-binding ng-isolate-scope" role="button"
-                        aria-haspopup="true" aria-controls="drop-menu" aria-expanded="false">
-                        <span class="iconWrapperNoBgM">
-                            <span class="icon-menu show-for-medium-up" aria-hidden="true"></span>
-                        </span>
-                        Menu
-                    </button>
-
-                    <!-- NAVIGATION WOOOOOO-->
-                </nav>
-
-                <!-- search button for small screens -->
-                <a href="javascript:void(0)" id="show_search" class="show-for-small-only button header-button right ng-isolate-scope" aria-expanded="false">
-                    <span class="iconWrapperNoBgS iconSearchHeader">
-                        <span class="icon-search" aria-hidden="true"></span>
-                        <span class="show-for-sr ng-binding">
-                            Search
-                        </span>
-                    </span>
-                </a>
-            </div>
         </div>
     </header>
 
     <main role="main">
-        <div class="row">
-            <div class="small-12 columns">
-                <div class="small-8 medium-5 large-3 end columns" style="padding: 1.5rem 0 0;">
-                    <a href="service-ontario.html" class="hide-for-print">
-                        <span class="ico-logo-serviceontario"></span>
-                        <span class="show-for-sr">ServiceOntario</span>
-                    </a>
-                </div>
+        <div class="columns large-3 medium-5 small-0" id="navigation" data-magellan-expedition="fixed">
+            <div class="government-callout">
+                <h2>Government of Ontario</h2>
+                <p>Ontario.ca is the official website of the Ontario Government</p>
             </div>
-            <div class="small-12 columns intro">
-                <p>Driver's licences, plate stickers, health cards, birth certificates and other services provided by the <a href="/page/government-ontario">Ontario government</a>.</p>
+            <nav role="navigation">
+                <div class="show-for-small-only">
+                    <form>
+                        <div class="row collapse postfix-round nav-search">
+                            <div class="small-12 columns">
+                                <div class="small-9 columns nav-search-input">
+                                    <input type="text" placeholder="">
+                                </div>
+                                <div class="small-3 columns nav-search-button">
+                                    <input type="submit" value="Search">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <ul class="side-nav">
+                    <li>
+                        <span class="flex">
+                            <a href="">Arts and Culture</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="">A+C Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="">A+C Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="">A+C Link 3</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex">
+                            <a href="">Business and Economy</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="">B+E Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="">B+E Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="">B+E Link 3</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex">
+                            <a class="active-li" href="driving-and-roads/driving-and-roads.html">Driving and Roads</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="driving-and-roads/driving-and-roads.html#driver-licensing">Driver licensing</a>
+                                </li>
+                                <li>
+                                    <a href="driving-and-roads/driving-and-roads.html#vehicle-registration">Vehicle registration</a>
+                                </li>
+                                <li>
+                                    <a href="driving-and-roads/driving-and-roads.html/#road-conditions-and-traffic-cameras">Road conditions and traffic cameras</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex">
+                            <a href="">Education and Training</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="">E+T Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="">E+T Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="">E+T Link 3</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex">
+                            <a href="">Environment and Energy</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="">E+E Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="">E+E Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="">E+E Link 3</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex">
+                            <a href="">Government</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="">G Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="">G Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="">G Link 3</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex">
+                            <a href="">Health and Wellness</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="">H+W Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="">H+W Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="">H+W Link 3</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex">
+                            <a href="">Home and Community</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="">H+C Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="">H+C Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="">H+C Link 3</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex">
+                            <a href="">Jobs and Employment</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="">J+E Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="">J+E Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="">J+E Link 3</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex">
+                            <a href="">Law and Safety</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="">L+S Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="">L+S Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="">L+S Link 3</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex">
+                            <a href="">Rural and North</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="">R+N Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="">R+N Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="">R+N Link 3</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex">
+                            <a href="">Taxes and Benefits</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="">T+B Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="">T+B Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="">T+B Link 3</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex">
+                            <a href="">Travel and Recreation</a>
+                            <a class="dropdown-button">
+                                <span>
+                                    <img src="../img/Group.png" alt="arrow right">
+                                </span>
+                            </a>
+                        </span>
+                        <span>
+                            <ul class="sub-nav">
+                                <li>
+                                    <a href="">T+R Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="">T+R Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="">T+R Link 3</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="service-ontario-callout">
+                <a href="../service-ontario.html">
+                    <h1>ServiceOntario</h1>
+                </a>
             </div>
         </div>
-        <div class="row">
-            <div class="main-content">
-                <div class="row services h4">
-                    <div class="small-12 medium-4 large-offset-1 large-3 columns">
-                        <h2>
-                            <span class="icon icon-driving">&nbsp;</span><a href="/page/services">Driving</a>
-                        </h2>
-                        
-                        <ul class="no-bullet">
-                            <li>
-                                <a href="/page/renew-licence-plate-sticker">Plate sticker renewal</a>
-                            </li>
-                            <li>
-                                <a href="/page/renew-drivers-licence">Driver’s licence renewal</a>
-                            </li>
-                            <li>
-                                <a href="/page/paying-defaulted-fines-and-drivers-licence-reinstatement">Pay defaulted fines and driver’s licence reinstatement</a>
-                            </li>
-                            <li>
-                                <a href="/page/register-vehicle-permit-licence-plate-and-sticker">Vehicle registration: plate/permit</a>
-                            </li>
-                            <li>
-                                <a href="/page/order-drivers-record">Driver records</a>
-                            </li>
-                            <li>
-                                <a href="/page/get-g-drivers-licence-new-drivers">New drivers: get a licence</a>
-                            </li>
-                            <li>
-                                <a href="/page/buy-or-sell-used-vehicle-ontario">Buy or sell a used vehicle</a>
-                            </li>
-                            <li>
-                                <a href="/page/exchange-out-province-drivers-licence">Exchange a driver’s licence</a>
-                            </li>
-                            <li>
-                                <a href="/page/enhanced-drivers-licence">Enhanced driver’s licence </a>
-                            </li>
-                            <li>
-                                <a href="/page/personalized-licence-plate">Personalized licence plates</a>
-                            </li>
-                            <li>
-                                <a href="/page/uncertified-vehicle-record">Vehicle records</a>
-                            </li>
-                            <li>
-                                <a href="/page/get-accessible-parking-permit">Accessible parking permit</a>
-                            </li>
-                        </ul>
-                        
-                        <h2>
-                            <span class="icon icon-business">&nbsp;</span><a href="/page/business-services">Business</a>
-                        </h2>
-                        
-                        <ul class="no-bullet">
-                            <li>
-                                <a href="/page/register-business-name-limited-partnership">Search, register and renew business names</a>
-                            </li>
-                            <li>
-                                <a href="/page/security-guards-and-private-investigators">Private security and investigators</a>
-                            </li>
-                            <li>
-                                <a href="/page/start-and-operate-not-profit">Not-for-profits</a>
-                            </li>
-                        </ul>
+        <div class="row-wide">
+            <div class="large-9 medium-7 small-12 columns">
+                <div style="padding: 1.5em 0 2em 0">
+                        <div class="row">
+                                <div class="small-12 columns">
+                                    <div class="breadcrumbs">
+                                        <ul class="breadcrumbs">
+                                            <li>
+                                                <a href="../index.html">Home</a>
+                                            </li>
+                                            <li class="current">
+                                                <a href="../pages/service-ontario.html">Renew a driver's licence</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <div class="small-8 medium-5 large-3 end columns" style="padding: 1.5rem 0 0;">
+                                <a href="service-ontario.html" class="hide-for-print">
+                                    <span class="ico-logo-serviceontario"></span>
+                                    <span class="show-for-sr">ServiceOntario</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="small-12 columns intro">
+                            <p>Driver's licences, plate stickers, health cards, birth certificates and other services provided
+                                by the
+                                <a href="/page/government-ontario">Ontario government</a>.</p>
+                        </div>
                     </div>
-                        
-                    <div class="small-12 medium-4 large-offset-1 large-3 columns">
-                        <h2>
-                            <span class="icon icon-health">&nbsp;</span><a href="/page/health-cards">Health</a>
-                        </h2>
-                        
-                        <ul class="no-bullet">
-                            <li>
-                                <a href="/page/health-card-renewal-replacement-and-cancellation">Health card renewal, replacement and cancellation</a>
-                            </li>
-                            <li>
-                                <a href="/page/switch-photo-health-card">Switch to a photo health card</a>
-                            </li>
-                            <li>
-                                <a href="/page/apply-ohip-and-get-health-card">First-time health card</a>
-                            </li>
-                            <li>
-                                <a href="/page/organ-and-tissue-donor-registration">Organ and tissue donation</a>
-                            </li>
-                        </ul>
-                        
-                        <h2>
-                            <a href="/page/official-government-id-and-certificates"><span class="icon icon-certificate">&nbsp;</span></a><a href="/page/official-government-id-and-certificates"><abbr title="identification">ID</abbr> and Certificates</a></h2>
-                        
-                        <ul class="no-bullet">
-                            <li>
-                                <a href="/page/change-address-drivers-licence-vehicle-permit-and-health-card">Change your <strong>address</strong></a>
-                            </li>
-                            <li>
-                                <a href="/page/change-name">Change your <strong>name</strong></a>
-                            </li>
-                            <li>
-                                <a href="/page/get-or-replace-ontario-birth-certificate">Birth certificate</a>
-                            </li>
-                            <li>
-                                <a href="/page/how-get-copy-ontario-marriage-certificate-online">Marriage certificate</a>
-                            </li>
-                            <li>
-                                <a href="/page/ontario-photo-card">Ontario Photo Card</a>
-                            </li>
-                            <li>
-                                <a href="/page/register-birth-new-baby">Newborn baby registration</a>
-                            </li>
-                            <li>
-                                <a href="/page/how-get-copy-ontario-death-certificate-online">Death certificate</a>
-                            </li>
-                        </ul>
-                        
-                        <h2>
-                            <span class="icon icon-outdoors">&nbsp;</span>Outdoors
-                        </h2>
-                        
-                        <ul class="no-bullet">
-                            <li>
-                                <a href="/page/hunting">Hunting licence</a>
-                            </li>
-                            <li>
-                                <a href="/page/get-outdoors-card">Outdoors Card</a>
-                            </li>
-                            <li>
-                                <a href="/page/fishing">Fishing licence</a>
-                            </li>
-                        </ul>
-                    </div>
-                        
-                    <div class="small-12 medium-4 large-offset-1 large-3 columns">
-                        <h2 class="bottom-margin-double"><span class="icon icon-map">&nbsp;</span>
-                            <a href="/page/serviceontario-locations-hours-and-contact">Locations and contact</a>
-                        </h2>
-                        
-                        <h2 class="bottom-margin-double"><span class="icon icon-servicefinder">&nbsp;</span>
-                            <a href="https://www.services.gov.on.ca/sf/#/">Service Finder</a>
-                        </h2>
-                        
-                        <h2><span class="icon icon-form">&nbsp;</span>More</h2>
-                        
-                        <ul class="no-bullet">
-                            <li>
-                                <a href="http://www.forms.ssb.gov.on.ca/mbs/ssb/forms/ssbforms.nsf?opendatabase&amp;ENV=WWE">Download forms</a>
-                            </li>
-                            <li>
-                                <a href="https://www.publications.serviceontario.ca/pubont/servlet/ecom/MainServlet?selectedLocale=en">Order publications</a>
-                            </li>
-                        </ul>
-                        
-                        <hr>
-                        <h2><span class="icon icon-federal">&nbsp;</span>
-                            <a href="http://www.servicecanada.gc.ca/eng/home.shtml">Service Canada</a>
-                        </h2>
-                        
-                        <ul class="no-bullet">
-                            <li>
-                                <a href="http://www.servicecanada.gc.ca/eng/sc/ei/index.shtml">Employment Insurance</a>
-                            </li>
-                            <li>
-                                <a href="http://www.cic.gc.ca/english/passport/">Passports</a>
-                            </li>
-                            <li>
-                                <a href="http://www.servicecanada.gc.ca/eng/sc/sin/index.shtml">Social Insurance Number</a>
-                            </li>
-                        </ul>
-                        
-                        <hr>
-                        <p>
-                            <a class="button" href="/page/services">Browse all services</a>
-                        </p>
+                    <div class="row">
+                        <div class="main-content">
+                            <div class="row services h4">
+                                <div class="small-12 medium-12 large-offset-1 large-3 columns">
+                                    <h2>
+                                        <span class="icon icon-driving">&nbsp;</span>
+                                        <a href="/page/services">Driving</a>
+                                    </h2>
+
+                                    <ul class="no-bullet">
+                                        <li>
+                                            <a href="/page/renew-licence-plate-sticker">Plate sticker renewal</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/renew-drivers-licence">Driver’s licence renewal</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/paying-defaulted-fines-and-drivers-licence-reinstatement">Pay defaulted fines and driver’s licence reinstatement</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/register-vehicle-permit-licence-plate-and-sticker">Vehicle registration: plate/permit</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/order-drivers-record">Driver records</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/get-g-drivers-licence-new-drivers">New drivers: get a licence</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/buy-or-sell-used-vehicle-ontario">Buy or sell a used vehicle</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/exchange-out-province-drivers-licence">Exchange a driver’s licence</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/enhanced-drivers-licence">Enhanced driver’s licence </a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/personalized-licence-plate">Personalized licence plates</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/uncertified-vehicle-record">Vehicle records</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/get-accessible-parking-permit">Accessible parking permit</a>
+                                        </li>
+                                    </ul>
+
+                                    <h2>
+                                        <span class="icon icon-business">&nbsp;</span>
+                                        <a href="/page/business-services">Business</a>
+                                    </h2>
+
+                                    <ul class="no-bullet">
+                                        <li>
+                                            <a href="/page/register-business-name-limited-partnership">Search, register and renew business names</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/security-guards-and-private-investigators">Private security and investigators</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/start-and-operate-not-profit">Not-for-profits</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="small-12 medium-12 large-offset-1 large-3 columns">
+                                    <h2>
+                                        <span class="icon icon-health">&nbsp;</span>
+                                        <a href="/page/health-cards">Health</a>
+                                    </h2>
+
+                                    <ul class="no-bullet">
+                                        <li>
+                                            <a href="/page/health-card-renewal-replacement-and-cancellation">Health card renewal, replacement and cancellation</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/switch-photo-health-card">Switch to a photo health card</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/apply-ohip-and-get-health-card">First-time health card</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/organ-and-tissue-donor-registration">Organ and tissue donation</a>
+                                        </li>
+                                    </ul>
+
+                                    <h2>
+                                        <a href="/page/official-government-id-and-certificates">
+                                            <span class="icon icon-certificate">&nbsp;</span>
+                                        </a>
+                                        <a href="/page/official-government-id-and-certificates">
+                                            <abbr title="identification">ID</abbr> and Certificates</a>
+                                    </h2>
+
+                                    <ul class="no-bullet">
+                                        <li>
+                                            <a href="/page/change-address-drivers-licence-vehicle-permit-and-health-card">Change your
+                                                <strong>address</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/change-name">Change your
+                                                <strong>name</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/get-or-replace-ontario-birth-certificate">Birth certificate</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/how-get-copy-ontario-marriage-certificate-online">Marriage certificate</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/ontario-photo-card">Ontario Photo Card</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/register-birth-new-baby">Newborn baby registration</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/how-get-copy-ontario-death-certificate-online">Death certificate</a>
+                                        </li>
+                                    </ul>
+
+                                    <h2>
+                                        <span class="icon icon-outdoors">&nbsp;</span>Outdoors
+                                    </h2>
+
+                                    <ul class="no-bullet">
+                                        <li>
+                                            <a href="/page/hunting">Hunting licence</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/get-outdoors-card">Outdoors Card</a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/fishing">Fishing licence</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="small-12 medium-12 large-offset-1 large-3 columns">
+                                    <h2 class="bottom-margin-double">
+                                        <span class="icon icon-map">&nbsp;</span>
+                                        <a href="/page/serviceontario-locations-hours-and-contact">Locations and contact</a>
+                                    </h2>
+
+                                    <h2 class="bottom-margin-double">
+                                        <span class="icon icon-servicefinder">&nbsp;</span>
+                                        <a href="https://www.services.gov.on.ca/sf/#/">Service Finder</a>
+                                    </h2>
+
+                                    <h2>
+                                        <span class="icon icon-form">&nbsp;</span>More</h2>
+
+                                    <ul class="no-bullet">
+                                        <li>
+                                            <a href="http://www.forms.ssb.gov.on.ca/mbs/ssb/forms/ssbforms.nsf?opendatabase&amp;ENV=WWE">Download forms</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.publications.serviceontario.ca/pubont/servlet/ecom/MainServlet?selectedLocale=en">Order publications</a>
+                                        </li>
+                                    </ul>
+
+                                    <hr>
+                                    <h2>
+                                        <span class="icon icon-federal">&nbsp;</span>
+                                        <a href="http://www.servicecanada.gc.ca/eng/home.shtml">Service Canada</a>
+                                    </h2>
+
+                                    <ul class="no-bullet">
+                                        <li>
+                                            <a href="http://www.servicecanada.gc.ca/eng/sc/ei/index.shtml">Employment Insurance</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.cic.gc.ca/english/passport/">Passports</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.servicecanada.gc.ca/eng/sc/sin/index.shtml">Social Insurance Number</a>
+                                        </li>
+                                    </ul>
+
+                                    <hr>
+                                    <p>
+                                        <a class="button" href="/page/services">Browse all services</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </main>
 
-    <footer id="footer">     
-            <div class="row">
-                <div class="small-12 columns ng-isolate-scope" id="notices">
-                    <ul ng-hide="copyRightOnly" role="navigation" aria-label="Secondary navigation" class="inline-list small top-margin-double no-bottom-margin">
-                        <li class="ng-scope">
-                            <a href="/page/about-ontario" class="ng-binding">
-                                about Ontario
-                            </a>
-                        </li>
-                        <li class="ng-scope">
-                            <a href="/page/accessibility" class="ng-binding">
-                                accessibility
-                            </a>
-                        </li>
-                        <li class="ng-scope">
-                            <a href="http://news.ontario.ca/newsroom/en" class="ng-binding">
-                                news
-                            </a>
-                        </li>
-                        <li class="ng-scope">
-                            <a href="/page/privacy-statement" class="ng-binding">
-                                privacy
-                            </a>
-                        </li>
-                        <li class="ng-scope">
-                            <a href="/page/terms-use" class="ng-binding">
-                                terms of use
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright">
-                        <small ng-switch="language">
-                            <a href="/page/copyright-information-c-queens-printer-ontario" class="ng-binding">© Queen’s Printer for Ontario, 2012‑18</a>
-                        </small>
-                    </p>
-                </div>
+    <!-- <footer id="footer">
+        <div class="row">
+            <div class="small-12 columns ng-isolate-scope" id="notices">
+                <ul ng-hide="copyRightOnly" role="navigation" aria-label="Secondary navigation" class="inline-list small top-margin-double no-bottom-margin">
+                    <li class="ng-scope">
+                        <a href="/page/about-ontario" class="ng-binding">
+                            about Ontario
+                        </a>
+                    </li>
+                    <li class="ng-scope">
+                        <a href="/page/accessibility" class="ng-binding">
+                            accessibility
+                        </a>
+                    </li>
+                    <li class="ng-scope">
+                        <a href="http://news.ontario.ca/newsroom/en" class="ng-binding">
+                            news
+                        </a>
+                    </li>
+                    <li class="ng-scope">
+                        <a href="/page/privacy-statement" class="ng-binding">
+                            privacy
+                        </a>
+                    </li>
+                    <li class="ng-scope">
+                        <a href="/page/terms-use" class="ng-binding">
+                            terms of use
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    <small ng-switch="language">
+                        <a href="/page/copyright-information-c-queens-printer-ontario" class="ng-binding">© Queen’s Printer for Ontario, 2012‑18</a>
+                    </small>
+                </p>
             </div>
-            <div class="footer-swoosh">
-                <div class="footer-swoosh--right"></div>
-            </div>
-        </footer>
-    
-        <!-- script references for static template only -->
-        <script src="../vendor/foundation-sites/js/vendor/jquery.js"></script>
-        <script src="../vendor/foundation-sites/js/foundation.min.js"></script>
-    </body>
+        </div>
+        <div class="footer-swoosh">
+            <div class="footer-swoosh--right"></div>
+        </div>
+    </footer> -->
+
+    <!-- script references for static template only -->
+    <script src="../vendor/foundation-sites/js/vendor/jquery.js"></script>
+    <script src="../vendor/foundation-sites/js/foundation.min.js"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+
 </html>

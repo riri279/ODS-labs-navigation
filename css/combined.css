@@ -548,6 +548,11 @@ select {
   margin: 0 auto;
   max-width: 62.5rem;
   width: 100%; }
+.row-wide {
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
+}
   /* line 239, vendor/foundation-sites/scss/foundation/components/_global.scss */
   .row:before, .row:after {
     content: " ";
@@ -3071,7 +3076,7 @@ select {
     /* line 103, vendor/foundation-sites/scss/foundation/components/_breadcrumbs.scss */
     .breadcrumbs > *:before {
       color: #AAAAAA;
-      content: "→";
+      content: "/";
       margin: 0 0.75rem;
       position: relative;
       top: 1px; }
