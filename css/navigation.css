@@ -248,6 +248,12 @@ main {
     background: grey;
   }
 
+
+
+  .navigation-index {
+    display: none !important;
+}
+
 /* media queries */
 @media (max-width: 1600px) {
     .service-ontario-callout h1 {
@@ -316,5 +322,10 @@ main {
 
     .thumbnail {
         display: none;
+    }
+
+    #navigation {
+        overflow: none;
+        position: static;
     }
 }
