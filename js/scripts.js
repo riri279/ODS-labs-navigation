@@ -25,16 +25,22 @@
         $('.in-this-section a span').toggleClass('open')
     })
 
-    $('#osap-help-button').on('click', function() {
-        $(".osap-help-menu").toggleClass("hide");
-        $(".osap-account-menu").addClass("hide");
+    // $('#osap-help-button').on('click', function() {
+    //     $(".osap-help-menu").toggleClass("hide");
+    //     $(".osap-account-menu").addClass("hide");
+    // })
+
+    // $('#osap-account-button').on('click', function() {
+    //     $(".osap-account-menu").toggleClass("hide");
+    //     $(".osap-help-menu").addClass("hide");
+    // })
+
+    $('#osap-nav > ul > li > a').on('click', function() {
+        $("#osap-nav ul.sub-nav-osap.open").removeClass('open')
+        $(this).next().toggle();
     })
 
-    $('#osap-account-button').on('click', function() {
-        $(".osap-account-menu").toggleClass("hide");
-        $(".osap-help-menu").addClass("hide");
+    $('#osap-nav-mobile-button').on('click', function() {
+        $('#osap-nav-mobile').toggle();
     })
-
-
-
  })();
