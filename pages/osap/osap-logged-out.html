@@ -149,52 +149,45 @@
             </div>
         </div>
         <div class="row intro">
-            <div class="container">
+            <div class="columns small-12">
+                <div class="container">
                     <h1>
                         <div class="row row-height">
                         <div class="col-xs-12 header-text-width col-height">
                             <img id="osapLogo" src="../../img/OSAP.png" alt="OSAP logo" class="osapLogo">
                         </div>
-                        <div class="col-xs-12 col-sm-10 col-height align-bottom title">Applications
+                        <div class="col-xs-12 col-sm-10 col-height align-bottom">Log in or register
                         </div>
                         </div>
                     </h1>
                     <div class="toc-line"></div>
-                    <div class="container row">
-                        <div class="columns small-12 medium-4">
-                            <h2>Full-time application</h2>
-                            <p>Use this application if you're taking 60% or more of a full course load or 40% if you have a permanent disability.<br> 
-                                <a href="#">How to calculate your course load </a>
-                            </p>
-                            <a href="#" class="button">Apply for OSAP</a>
-                            <a href="#" class="button">Go to my applications</a>
-                        </div>
-                        <div class="columns small-12 medium-4">
-                            <h2>Part-time applications</h2>
-                            <p>Use this application if you're taking 20% to 59% of a full course load. <br> 
-                                <a href="#">How to calculate your course load </a>
-                            </p>
-                            <a href="#" class="button">Apply for OSAP</a>
-                        </div>
-                        <div class="columns small-12 medium-4"></div> 
-                    </div>
-                    <div class="toc-line"></div>
-                    <div class="row small-12">
-                        <h2 class="title">Interest-free status</h2>
-                        <p>Use this application if you're not applying for OSAP and are in full-time studies. It will keep your previous full-time OSAP loans in interest-free status so you do not have to start repayment.</p>
-                        <a href="#" class="button">Apply for interest-free status</a>
-                    </div>
-                    <div class="toc-line"></div>
-                    <div class="row small-12">
-                        <h2 class="title">More information</h2>
-                        <p>OTHER LINKS / STUFF HERE</p>
-                    </div>
                 </div> 
+                <div class="container row">
+                    <div class="columns small-12 medium-4">
+                        <h2>Log in</h2>
+                        <div class="form-group">
+                            <strong>Enter OSAP Access Number (OAN):</strong>
+                            <input type="text" maxlength="9" size="14">
+                        </div>
+                        <div class="form-group">
+                            <strong>Password:</strong>
+                            <input type="text" maxlength="9" size="14">
+                        </div>
+                        <a href="osap-logged-in.html" class="button">Log in</a>
+                    </div>
+                    <div class="columns small-12 medium-4">
+                        <h2>New to OSAP?</h2>
+                        <a href="#" class="button">Register</a>
+                    </div>
+                    <div class="columns small-12 medium-4"></div>
+
+                </div>    
+            </div>
         </div>
     </main>
 
     <footer id="footer">
-        <h1>Ministry of Training, Colleges and Universities</h1>
+        <h2>Ministry of Training, Colleges and Universities</h2>
         <div class="row">
             <div class="small-12 columns ng-isolate-scope" id="notices">
                 <ul ng-hide="copyRightOnly" role="navigation" aria-label="Secondary navigation" class="inline-list small top-margin-double no-bottom-margin">
@@ -241,7 +234,6 @@
     <script src="../../vendor/foundation-sites/js/foundation.min.js"></script>
     <script src="../../js/scripts.js"></script>
     <script src="app.js"></script>
-
 </body>
 
 </html>
