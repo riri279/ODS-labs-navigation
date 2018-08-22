@@ -20,7 +20,7 @@ header {
 
 .breadcrumbs-container {
     padding: 15px 20px;
-    background: rgba(42, 121, 189, 0.1)
+    background: rgba(42, 121, 189, 0.2)
 }
 
 .breadcrumbs {
@@ -28,9 +28,27 @@ header {
     background: none;
 }
 
+.hero-image img {
+    width: 100%;
+    max-height: 375px;
+}
+
+main {
+    margin-top: 20px;
+    background: white;
+}
+
+#main-index {
+    margin-top: 0;
+}
+
 .main-content p {
     width: 100%;
     max-width: 100%;
+}
+
+.in-this-section {
+    display: none;
 }
 
 .in-this-section a {
@@ -54,6 +72,17 @@ header {
 .in-this-section ul {
     display: none;
     margin-bottom: 25px;
+}
+
+.in-this-section-desktop {
+    margin-top: 130px;
+}
+
+.in-this-section-desktop h4 {
+    color: black;
+    border-bottom: 1.5px solid #dadada;
+    margin-bottom: 0;
+    font-weight: bold;
 }
 
 #main-navigation {
@@ -101,10 +130,7 @@ header {
 
 #footer {
     background: #ededed;
-}
-
-main {
-    background: white;
+    /* display: none; */
 }
 
 .government-callout {
@@ -388,6 +414,14 @@ main .osap-header {
 }
 
 @media (max-width: 640px) {
+    .in-this-section-desktop {
+        display: none;
+    }
+
+    .in-this-section {
+        display: block;
+    }
+
     #main-navigation ul {
         width: auto;
     }
@@ -435,6 +469,14 @@ main .osap-header {
     main.search-popup-active {
         opacity: .1;
         background: rgba(0, 0, 0, 1);
+    }
+
+    #driver-licensing {
+        padding: 0 15px;
+    }
+
+    .hero-image {
+        display: none;
     }
 }
 

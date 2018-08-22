@@ -1,0 +1,68 @@
+.menu-foot{
+	background-color: #306A44;
+	color: white;
+}
+
+.drilldown > li {
+	border-top: gray solid 1px;
+	width: 100%;
+	color: black;
+}
+
+.drilldown > a {
+	color: black;
+}
+
+.text-wrapper {
+	background-image: url(../img/Rectangle-3.png);
+}
+
+.menu-content {
+	border-right: gray solid 1px;
+	padding-right: 0px;
+}
+
+.menu-head {
+	color:white;
+	margin-left: 10px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.menu-foot {
+	color: white; 
+	text-align: center;
+	height: 100px;
+	vertical-align: center;
+	margin-bottom: 0px;
+}
+
+.search-content {
+	margin-top: 8px !important;
+	margin-bottom: 8px !important;
+}
+
+.search-wrap{
+	border: 1px black solid;
+	border-radius: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.make-it-black {
+	color: black;
+}
+
+.text {
+	position: absolute;
+	right: 0px;
+}
+
+.menu-button {
+	padding-bottom: 22px;
+	background-color: #333333;
+}
+
+.osapLogo{
+	height: 70px;
+}
