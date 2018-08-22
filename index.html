@@ -14,19 +14,9 @@
 <body>
 
     <header ng-class="default" id="ng-view-header" class="ng-isolate-scope">
-        <div class="row-wide">
-            <!-- Logo -->
-            <div class="small-12 medium-4 columns site-logo-print--wrapper ng-scope">
-                <!-- Mobile Menu -->
-                <div class="show-for-small-only hamburger" id="hamburger-nav">
-                    <div id="nav-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <p>MENU</p>
-                </div>
+        <div class="row">
+            <!-- Logo/Left Header Side -->
+            <div class="small-5 medium-8 large-8 columns site-logo-print--wrapper ng-scope">
                 <div id="logo">
                     <div class="site-logo-print--wrapper ng-scope">
                         <a href="../../index.html">
@@ -42,382 +32,131 @@
                 </div>
             </div>
 
-            <div class="medium-5 large-6 columns search-panel show-for-medium-up">
-                <form class="search-input-form ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength" accept-charset="utf-8" role="search">
-                    <div class="search row collapse radius" id="search">
-                        <div class="small-8 medium-10 columns">
-                            <div submit="submit" search="search" class="ng-isolate-scope">
-                                <div>
-                                    <div class="clear-input--wrapper ng-scope">
-                                        <input aria-label="Search" autocapitalize="none" role="search" class="no-shadow no-border ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength">
-                                        <span class="clear-input">
-                                            <a tabindex="0">
-                                                <span class="show-for-sr ng-binding">Clear field</span>
-                                                <span aria-hidden="true">×</span>
-                                            </a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="small-4 medium-2 columns">
-                            <button class="show-for-medium-up button header-button postfix radius" type="submit">
-                                <span class="iconWrapperNoBg iconSearchHeader">
-                                    <span class="icon-search" aria-hidden="true">
-                                    </span>
-                                    <span class="show-for-sr ng-binding">
-                                        Search
-                                    </span>
-                                </span>
-                            </button>
-                        </div>
+            <div class="medium-4 large-4 columns">
+                <!-- Right Header Side -->
+                <div class="right-header-side">
+                    <!-- Main Navigation -->
+                    <div id="main-navigation">
+                        <nav role="navigation">
+                            <ul>
+                                <li>
+                                    <a href="">Arts and Culture</a>
+                                </li>
+                                <li>
+                                    <a href="">Business and Economy</a>
+                                </li>
+                                <li>
+                                    <a href="">Driving and Roads</a>
+                                </li>
+                                <li>
+                                    <a href="">Education and Training</a>
+                                </li>
+                                <li>
+                                    <a href="">Environment and Energy</a>
+                                </li>
+                                <li>
+                                    <a href="../government/government.html">Government</a>
+                                </li>
+                                <li>
+                                    <a href="">Health and Wellness</a>
+                                </li>
+                                <li>
+                                    <a href="">Home and Community</a>
+                                </li>
+                                <li>
+                                    <a href="">Jobs and Employment</a>
+                                </li>
+                                <li>
+                                    <a href="">Law and Safety</a>
+                                </li>
+                                <li>
+                                    <a href="">Rural and North</a>
+                                </li>
+                                <li>
+                                    <a href="">Taxes and Benefits</a>
+                                </li>
+                                <li>
+                                    <a href="">Travel and Recreation</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                </form>
+                    <!-- Search Icon -->
+                    <div id="search-icon">
+                        <span class="iconWrapperNoBg iconSearchHeader">
+                            <span class="icon-search" aria-hidden="true">
+                            </span>
+                            <span class="show-for-sr ng-binding">
+                                Search
+                            </span>
+                        </span>
+                    </div>
+                    <!-- Lang toggle-->
+                    <div class="lang-toggle">
+                        <p>
+                            <a href="#">français</a>
+                        </p>
+                    </div>
+                    <!-- Main Navigation Button -->
+                    <a href="#" class="button" id="main-navigation-button">Menu</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Main -->
-    <main role="main">
-        <div class="columns large-3 medium-5 small-0 navigation-index" id="navigation" data-magellan-expedition="fixed">
-            <div class="government-callout">
-                <h2>Government of Ontario</h2>
-                <p>Ontario.ca is the official website of the Ontario Government</p>
+    <!--Search Popup-->
+    <section>
+        <div class="row" id="search-popup">
+            <div class="small-12 columns search-popup-checkboxes">
+                <input type="radio" name="section-search" value="allOntario" id="allOntario" checked>
+                <label for="allOntario">All of Ontario.ca</label>
+                <input type="radio" name="section-search" value="thisSection" id="thisSection">
+                <label for="thisSection">In this Section</label>
             </div>
-            <nav role="navigation">
-                <div class="show-for-small-only">
-                    <form>
-                        <div class="row collapse postfix-round nav-search">
-                            <div class="small-12 columns">
-                                <div class="small-9 columns nav-search-input">
-                                    <input type="text" placeholder="">
-                                </div>
-                                <div class="small-3 columns nav-search-button">
-                                    <input type="submit" value="Search">
+            <div class="close">
+                <a href="#">X</a>
+            </div>
+            <div class="small-12 columns search-popup-searchbar">
+                <div class="search collapse radius" id="search">
+                    <div class="small-8 medium-10 columns">
+                        <div submit="submit" search="search" class="ng-isolate-scope">
+                            <div>
+                                <div class="clear-input--wrapper ng-scope">
+                                    <input aria-label="Search" autocapitalize="none" role="search" class="no-shadow ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength">
+                                    <span class="clear-input">
+                                        <a tabindex="0">
+                                            <span class="show-for-sr ng-binding">Clear field</span>
+                                            <span aria-hidden="true">×</span>
+                                        </a>
+                                    </span>
                                 </div>
                             </div>
-
                         </div>
-                    </form>
+                    </div>
+                    <div class="small-4 medium-2 columns">
+                        <button class="button header-button postfix radius" type="submit">Search
+                        </button>
+                    </div>
                 </div>
-                <ul class="side-nav">
-                    <li>
-                        <span class="flex">
-                            <a href="">Arts and Culture</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="">A+C Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="">A+C Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="">A+C Link 3</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex">
-                            <a href="">Business and Economy</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="">B+E Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="">B+E Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="">B+E Link 3</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex">
-                            <a class="active-li" href="../driving-and-roads/driving-and-roads.html">Driving and Roads</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="../driving-and-roads/driving-and-roads.html#driver-licensing">Driver licensing</a>
-                                </li>
-                                <li>
-                                    <a href="../driving-and-roads/driving-and-roads.html#vehicle-registration">Vehicle registration</a>
-                                </li>
-                                <li>
-                                    <a href="../driving-and-roads/driving-and-roads.html/#road-conditions-and-traffic-cameras">Road conditions and traffic cameras</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex">
-                            <a href="">Education and Training</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="">E+T Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="">E+T Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="">E+T Link 3</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex">
-                            <a href="">Environment and Energy</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="">E+E Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="">E+E Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="">E+E Link 3</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex">
-                            <a href="">Government</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="">G Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="">G Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="">G Link 3</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex">
-                            <a href="">Health and Wellness</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="">H+W Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="">H+W Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="">H+W Link 3</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex">
-                            <a href="">Home and Community</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="">H+C Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="">H+C Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="">H+C Link 3</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex">
-                            <a href="">Jobs and Employment</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="">J+E Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="">J+E Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="">J+E Link 3</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex">
-                            <a href="">Law and Safety</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="">L+S Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="">L+S Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="">L+S Link 3</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex">
-                            <a href="">Rural and North</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="">R+N Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="">R+N Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="">R+N Link 3</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex">
-                            <a href="">Taxes and Benefits</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="">T+B Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="">T+B Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="">T+B Link 3</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="flex">
-                            <a href="">Travel and Recreation</a>
-                            <a class="dropdown-button">
-                                <span>
-                                    <img src="../../img/Group.png" alt="arrow right">
-                                </span>
-                            </a>
-                        </span>
-                        <span>
-                            <ul class="sub-nav">
-                                <li>
-                                    <a href="">T+R Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="">T+R Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="">T+R Link 3</a>
-                                </li>
-                            </ul>
-                        </span>
-                    </li>
-                </ul>
-            </nav>
-            <div class="service-ontario-callout">
-                <a href="../service-ontario.html">
-                    <h1>ServiceOntario</h1>
-                </a>
             </div>
         </div>
-        <!-- Green Banner -->
-        <div style="background: #006B3F;color: white; padding: 1.5em 0 2em 0">
-            <div class="row ng-scope">
-                <div class="small-12 columns end">
+    </section>
+
+    <!-- Main -->
+    <main role="main">
+        <div class="gov-home">
+            <div class="row">
+                <div class="small-12 columns">
                     <h1 class="ng-binding" style="color: white;"> Government of Ontario</h1>
                     <div class="ng-scope">
                         <p class="no-margin">Ontario.ca is the official website of the Ontario Government.</p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="row">
+
         </div>
 
         <!-- Main Icons -->
@@ -600,7 +339,7 @@
                 <div class="row h3">
                     <div class="small-12 large-6 columns">
                         <h2 class="top-margin-double">
-                            <a href="/page/government">Government</a>
+                            <a href="pages/government/government.html">Government</a>
                         </h2>
                         <p>How government works, Open Government, and the public service. Contact us through a
                             <a href="/page/ministries">ministry</a>

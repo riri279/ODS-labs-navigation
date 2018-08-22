@@ -3076,7 +3076,7 @@ select {
     /* line 103, vendor/foundation-sites/scss/foundation/components/_breadcrumbs.scss */
     .breadcrumbs > *:before {
       color: #AAAAAA;
-      content: "/";
+      content: "→";
       margin: 0 0.75rem;
       position: relative;
       top: 1px; }

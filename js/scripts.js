@@ -1,66 +1,27 @@
 (function() {
-    $(document).foundation({
-        offcanvas : {
-          // Sets method in which offcanvas opens.
-          // [ move | overlap_single | overlap ]
-          open_method: 'move', 
-          // Should the menu close when a menu link is clicked?
-          // [ true | false ]
-          close_on_click : false
-        }
-      });
-
-      $(document).foundation({
-        "magellan-expedition": {
-            active_class: 'active', // specify the class used for active sections
-            threshold: 0, // how many pixels until the magellan bar sticks, 0 = auto
-            destination_threshold: 20, // pixels from the top of destination for it to be considered active
-            throttle_delay: 50, // calculation throttling to increase framerate
-            fixed_top: 0, // top distance in pixels assigend to the fixed element on scroll
-            offset_by_height: false// whether to offset the destination by the expedition height. Usually you want this to be true, unless your expedition is on the side.
-        }
-    });
-
-    //on click of dropdown arrow, toggle open sub-nav
-    $('.dropdown-button').on('click', function() {
-        var parent = $(this).parent().parent();
-        $(this).parent().toggleClass('active');
-        $('img', this).toggleClass('active')
-        var subNav = parent.find('.sub-nav');
-        subNav.slideToggle();
+    //main navigation toggle
+    $('#main-navigation-button').on('click', function() {
+        $('#main-navigation').toggleClass('main-nav-open');
+        $('#search-popup').slideUp();
     })
 
-    //on click of hamburger nav
-    $('#nav-icon').click(function(){
-        $(this).toggleClass('open');
-        $('#navigation').slideToggle();
+
+    //search bar appears on search icon click
+    $('#search-icon').on('click', function() {
+        $('#main-navigation').removeClass('main-nav-open');
+        $('#search-popup').slideToggle();
+        $('main').toggleClass('search-popup-active');
     });
 
-    $('#menuButton').on('click', function() {
-        $('.navigation-index').slideToggle()
+    //search bar closes on search icon close click
+    $('.close a').on('click', function() {
+        $('#search-popup').slideUp();
+        $('main').removeClass('search-popup-active');
+    });
+
+    //in this section toggle
+    $('.in-this-section a').on('click', function() {
+        $('.in-this-section ul').slideToggle();
+        $('.in-this-section a span').toggleClass('open')
     })
-    
-
-    //make sure nav is open when screen is bigger than 640px
-    function check() {
-        if ($(window).width() > 639) {
-            $('#navigation').show();
-            $('#nav-icon').removeClass('open');
-            $('#navigation').addClass('is-mobile');
-            $('#navigation').attr('data-magellan-expedition', 'fixed');
-        } else {
-            $('#navigation').hide();
-            $('#navigation').removeClass('is-mobile')
-            $('#navigation').removeAttr('data-magellan-expedition')
-        }
-    }
-
-    check();
-    
-    $(window).resize(function() {
-        check();
-    });
-
-    
-
  })();
