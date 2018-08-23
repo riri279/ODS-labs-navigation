@@ -35,9 +35,19 @@
     //     $(".osap-help-menu").addClass("hide");
     // })
 
-    $('#osap-nav > ul > li > a').on('click', function() {
-        $("#osap-nav ul.sub-nav-osap.open").removeClass('open')
-        $(this).next().toggle();
+    // $('#osap-nav > ul > li > a').on('click', function() {
+    //     $("#osap-nav ul.sub-nav-osap.open").removeClass('open')
+    //     $(this).next().toggle();
+    // })
+
+    $('#osap-account').on('click', function() {
+        $("#help").parent().find('.sub-nav-osap').hide();
+        $(this).parent().find('.sub-nav-osap').toggle();
+    })
+
+    $('#help').on('click', function() {
+        $('#osap-account').parent().find('.sub-nav-osap').hide();
+        $(this).parent().find('.sub-nav-osap').toggle();
     })
 
     $('#osap-nav-mobile-button').on('click', function() {

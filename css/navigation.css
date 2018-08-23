@@ -1,4 +1,7 @@
 /* general styles*/
+a:visited {
+    color: #06c;
+}
 header {
     min-height: 80px;
 }
