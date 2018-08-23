@@ -50,7 +50,12 @@
         $(this).parent().find('.sub-nav-osap').toggle();
     })
 
+    $('#osap-nav-mobile a').on('click', function() {
+        $(this).parent().find('.sub-nav-osap').slideToggle();
+    })
+
     $('#osap-nav-mobile-button').on('click', function() {
         $('#osap-nav-mobile').toggle();
     })
+
  })();

@@ -125,8 +125,8 @@
     position: relative;
 }
 
-#osap-nav-mobile .chevron {
-    display: none;
+#osap-nav-mobile > .chevron {
+    /* display: none; */
 }
 
 #osap-nav-mobile ul.sub-nav-osap {
@@ -141,6 +141,7 @@
     padding: 3px 20px;
     position: relative;
     display: block;
+    font-weight: bold;
 }
 
 #osap-nav > ul > li,
@@ -192,7 +193,8 @@ ul.sub-nav-osap li {
 }
 
 #osap-nav-mobile ul.sub-nav-osap {
-    padding-left: 30px;
+    display: none;
+    padding-left: 15px;
 }
 
 #osap-nav-mobile ul.sub-nav-osap li {
@@ -241,6 +243,16 @@ ul.sub-nav-osap li a:hover,
     position: absolute;
     left: 70%;
 }
+
+.osap-nav-mobile-chevron-one {
+    left: 135px;
+}
+
+.osap-nav-mobile-chevron-two {
+    left: 65px;
+}
+
+
 
 
 @media (max-width: 1050px) {
