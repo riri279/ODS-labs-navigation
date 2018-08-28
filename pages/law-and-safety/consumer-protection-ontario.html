@@ -16,7 +16,7 @@
     <header ng-class="default" id="ng-view-header" class="ng-isolate-scope">
         <div class="row">
             <!-- Logo/Left Header Side -->
-            <div class="small-5 medium-8 large-8 columns site-logo-print--wrapper ng-scope">
+            <div class="small-5 medium-2 large-2 columns site-logo-print--wrapper ng-scope">
                 <div id="logo">
                     <div class="site-logo-print--wrapper ng-scope">
                         <a href="../../index.html">
@@ -32,64 +32,104 @@
                 </div>
             </div>
 
-            <div class="medium-4 large-4 columns">
+            <!--Search bar-->
+            <div class="large-7 medium-7 columns" id="search-header">
+                <div class="search row collapse radius" id="search">
+                    <div class="small-8 medium-10 columns">
+                        <div>
+                            <div>
+
+                                <div>
+                                    <input role="search" class="no-shadow no-border ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength">
+
+                                    <span class="clear-input">
+                                        <a>
+                                            <span class="show-for-sr">Clear field</span>
+                                            <span aria-hidden="true">×</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-4 medium-2 columns">
+                        <button class="button header-button postfix radius" type="submit">
+                            <span class="iconWrapperNoBg iconSearchHeader">
+                                <span class="icon-search" aria-hidden="true">
+                                </span>
+                                <span class="show-for-sr">
+                                    Search
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="medium-3 large-3 columns">
                 <!-- Right Header Side -->
                 <div class="right-header-side">
                     <!-- Main Navigation -->
                     <div id="main-navigation">
                         <nav role="navigation">
                             <ul>
-                                <li>
-                                    <a href="">Arts and Culture</a>
-                                </li>
-                                <li>
-                                    <a href="">Business and Economy</a>
-                                </li>
-                                <li>
-                                    <a href="../driving-and-roads/driving-and-roads.html">Driving and Roads</a>
-                                </li>
-                                <li>
-                                    <a href="../education-and-training/education-and-training.html">Education and Training</a>
-                                </li>
-                                <li>
-                                    <a href="">Environment and Energy</a>
-                                </li>
-                                <li>
-                                    <a href="../government/government.html">Government</a>
-                                </li>
-                                <li>
-                                    <a href="">Health and Wellness</a>
-                                </li>
-                                <li>
-                                    <a href="">Home and Community</a>
-                                </li>
-                                <li>
-                                    <a href="">Jobs and Employment</a>
-                                </li>
-                                <li>
-                                    <a href="../law-and-safety/law-and-safety.html">Law and Safety</a>
-                                </li>
-                                <li>
-                                    <a href="">Rural and North</a>
-                                </li>
-                                <li>
-                                    <a href="">Taxes and Benefits</a>
-                                </li>
-                                <li>
-                                    <a href="">Travel and Recreation</a>
-                                </li>
+                                <div id="mobile-search">
+                                    <div class="row">
+                                        <div class="columns small-9">
+                                            <input type="text">
+                                        </div>
+                                        <div class="columns small-3">
+                                            <button>Search</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="nav-links">
+                                    <li>
+                                        <a href="">Arts and Culture</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Business and Economy</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/driving-and-roads/driving-and-roads.html">Driving and Roads</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/education-and-training/education-and-training.html">Education
+                                            and
+                                            Training</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Environment and Energy</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/government/government.html">Government</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Health and Wellness</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Home and Community</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Jobs and Employment</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/law-and-safety/law-and-safety.html">Law and Safety</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Rural and North</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Taxes and Benefits</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Travel and Recreation</a>
+                                    </li>
+                                </div>
+
                             </ul>
                         </nav>
-                    </div>
-                    <!-- Search Icon -->
-                    <div id="search-icon">
-                        <span class="iconWrapperNoBg iconSearchHeader">
-                            <span class="icon-search" aria-hidden="true">
-                            </span>
-                            <span class="show-for-sr ng-binding">
-                                Search
-                            </span>
-                        </span>
                     </div>
                     <!-- Lang toggle-->
                     <div class="lang-toggle">
@@ -169,7 +209,8 @@
                     <div class="small-12 columns">
                         <h1>Consumer Protection Ontario</h1>
                         <p>Before, during or after you make a purchase,
-                            <strong>learn your rights</strong> and find the information you need to know to protect yourself.</p>
+                            <strong>learn your rights</strong> and find the information you need to know to protect
+                            yourself.</p>
                     </div>
 
                 </div>
@@ -179,17 +220,19 @@
                             <div class="row">
                                 <div class="small-12 medium-2 columns">
                                     <a href="/page/consumer-protection-information-about-homes-and-renovations">
-                                        <img alt="Icon of a house with a window and door." class="img-left" height="150" src="http://files.ontario.ca/cpo_homes_and_living_icon.png"
-                                            width="150">
+                                        <img alt="Icon of a house with a window and door." class="img-left" height="150"
+                                            src="http://files.ontario.ca/cpo_homes_and_living_icon.png" width="150">
                                     </a>
                                 </div>
 
                                 <div class="small-12 medium-4 columns">
                                     <h3>
-                                        <a href="/page/consumer-protection-information-about-homes-and-renovations">Homes and renovations</a>
+                                        <a href="/page/consumer-protection-information-about-homes-and-renovations">Homes
+                                            and renovations</a>
                                     </h3>
 
-                                    <p>Door-to-door sales, buying or renting a home or condo, hiring a mover, and starting a
+                                    <p>Door-to-door sales, buying or renting a home or condo, hiring a mover, and
+                                        starting a
                                         renovation.</p>
                                 </div>
 
@@ -203,10 +246,12 @@
 
                                 <div class="small-12 medium-4 columns">
                                     <h3>
-                                        <a href="../law-and-safety/contracts-and-memberships.html">Contracts and memberships</a>
+                                        <a href="../law-and-safety/contracts-and-memberships.html">Contracts and
+                                            memberships</a>
                                     </h3>
 
-                                    <p>Signing a contract, including wireless service plans or joining a gym or modelling agency.</p>
+                                    <p>Signing a contract, including wireless service plans or joining a gym or
+                                        modelling agency.</p>
                                 </div>
                             </div>
 
@@ -228,7 +273,7 @@
 
                                 <div class="small-12 medium-2 columns">
                                     <a href="/page/consumer-protection-when-shopping" class="img-left" height="150" src="http://files.ontario.ca/cpo_shopping_icon.png"
-                                            width="150">
+                                        width="150">
                                     </a>
                                 </div>
 
@@ -237,24 +282,28 @@
                                         <a href="/page/consumer-protection-when-shopping">Shopping</a>
                                     </h3>
 
-                                    <p>Shopping in-store and online, reward points, gift cards, returns, warranties, and exchanges.</p>
+                                    <p>Shopping in-store and online, reward points, gift cards, returns, warranties,
+                                        and exchanges.</p>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="small-12 medium-2 columns">
                                     <a href="/page/consumer-protection-information-credit-loans-and-debt-collection">
-                                        <img alt="Icon of a credit card and cash with a dollar sign." class="img-left" height="150"
-                                            src="http://files.ontario.ca/cpo_financial_products_icon.png" width="150">
+                                        <img alt="Icon of a credit card and cash with a dollar sign." class="img-left"
+                                            height="150" src="http://files.ontario.ca/cpo_financial_products_icon.png"
+                                            width="150">
                                     </a>
                                 </div>
 
                                 <div class="small-12 medium-4 columns">
                                     <h3>
-                                        <a href="/page/consumer-protection-information-credit-loans-and-debt-collection">Credit, loans and debt</a>
+                                        <a href="/page/consumer-protection-information-credit-loans-and-debt-collection">Credit,
+                                            loans and debt</a>
                                     </h3>
 
-                                    <p>Payday loans, credit reports, and debt collection and settlement, including repossession
+                                    <p>Payday loans, credit reports, and debt collection and settlement, including
+                                        repossession
                                         of property.</p>
                                 </div>
 
@@ -267,10 +316,12 @@
 
                                 <div class="small-12 medium-4 columns">
                                     <h3>
-                                        <a href="/page/consumer-protection-when-planning-funeral-burial-cremation-or-scattering">Funerals and arrangements</a>
+                                        <a href="/page/consumer-protection-when-planning-funeral-burial-cremation-or-scattering">Funerals
+                                            and arrangements</a>
                                     </h3>
 
-                                    <p>Planning a funeral, burial, cremation or scattering and what to do if you discover a
+                                    <p>Planning a funeral, burial, cremation or scattering and what to do if you
+                                        discover a
                                         burial site.</p>
                                 </div>
                             </div>
@@ -285,23 +336,26 @@
 
                                 <div class="small-12 medium-4 columns">
                                     <h3>
-                                        <a href="/page/consumer-protection-information-around-travelling-and-entertainment">Travel and entertainment</a>
+                                        <a href="/page/consumer-protection-information-around-travelling-and-entertainment">Travel
+                                            and entertainment</a>
                                     </h3>
 
-                                    <p>Ticket sales, booking a trip, buying a timeshare and information on Ontario’s movie rating
+                                    <p>Ticket sales, booking a trip, buying a timeshare and information on Ontario’s
+                                        movie rating
                                         system.</p>
                                 </div>
 
                                 <div class="small-12 medium-2 columns">
                                     <a href="/page/consumer-protection-information-families-and-relationships">
-                                        <img alt="Icon of three people - depicting a family." class="img-left" height="150" src="http://files.ontario.ca/cpo_family_and_relationships_icon.png"
-                                            width="150">
+                                        <img alt="Icon of three people - depicting a family." class="img-left" height="150"
+                                            src="http://files.ontario.ca/cpo_family_and_relationships_icon.png" width="150">
                                     </a>
                                 </div>
 
                                 <div class="small-12 medium-4 columns">
                                     <h3>
-                                        <a href="/page/consumer-protection-information-families-and-relationships">Families and relationships</a>
+                                        <a href="/page/consumer-protection-information-families-and-relationships">Families
+                                            and relationships</a>
                                     </h3>
 
                                     <p>Dating services and getting married.</p>
@@ -311,8 +365,8 @@
                             <div class="row">
                                 <div class="small-12 medium-2 columns">
                                     <a href="/page/scams-and-identity-theft">
-                                        <img alt="Icon of a person wearing a face mask and hat." class="img-left" height="150"
-                                            src="http://files.ontario.ca/cpo_scams_icon.png" width="150">
+                                        <img alt="Icon of a person wearing a face mask and hat." class="img-left"
+                                            height="150" src="http://files.ontario.ca/cpo_scams_icon.png" width="150">
                                     </a>
                                 </div>
 
@@ -321,14 +375,16 @@
                                         <a href="/page/scams-and-identity-theft">Scams and identity theft</a>
                                     </h3>
 
-                                    <p>Protect yourself from common scams and identity theft, and learn what to do if you are
+                                    <p>Protect yourself from common scams and identity theft, and learn what to do if
+                                        you are
                                         a victim.</p>
                                 </div>
 
                                 <div class="small-12 medium-2 columns">
                                     <a href="/page/taking-action-your-consumer-rights">
-                                        <img alt="Icon of a person with a question mark thought-bubble above their head." class="img-left"
-                                            height="150" src="http://files.ontario.ca/cpo_taking_action_icon.png" width="150">
+                                        <img alt="Icon of a person with a question mark thought-bubble above their head."
+                                            class="img-left" height="150" src="http://files.ontario.ca/cpo_taking_action_icon.png"
+                                            width="150">
                                     </a>
                                 </div>
 
@@ -348,8 +404,8 @@
                                 <div class="small-12 medium-2 columns">
                                     <p>
                                         <a href="/page/consumer-protection-information-businesses">
-                                            <img alt="Icon of the scales of justice inside of a briefcase." height="150" src="http://files.ontario.ca/cpo_law_for_businesses_icon.jpg"
-                                                width="150">
+                                            <img alt="Icon of the scales of justice inside of a briefcase." height="150"
+                                                src="http://files.ontario.ca/cpo_law_for_businesses_icon.jpg" width="150">
                                         </a>
                                     </p>
                                 </div>
@@ -358,7 +414,8 @@
                                     <h3>
                                         <a href="/page/consumer-protection-information-businesses">For businesses</a>
                                     </h3>
-                                    Information to help businesses comply with consumer protection laws and avoid consumer complaints.
+                                    Information to help businesses comply with consumer protection laws and avoid
+                                    consumer complaints.
 
                                     <p>&nbsp;</p>
                                 </div>
@@ -403,7 +460,8 @@
                 </ul>
                 <p class="copyright">
                     <small ng-switch="language">
-                        <a href="/page/copyright-information-c-queens-printer-ontario" class="ng-binding">© Queen’s Printer for Ontario, 2012‑18</a>
+                        <a href="/page/copyright-information-c-queens-printer-ontario" class="ng-binding">© Queen’s
+                            Printer for Ontario, 2012‑18</a>
                     </small>
                 </p>
             </div>

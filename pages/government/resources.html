@@ -16,7 +16,7 @@
     <header ng-class="default" id="ng-view-header" class="ng-isolate-scope">
         <div class="row">
             <!-- Logo/Left Header Side -->
-            <div class="small-5 medium-8 large-8 columns site-logo-print--wrapper ng-scope">
+            <div class="small-5 medium-2 large-2 columns site-logo-print--wrapper ng-scope">
                 <div id="logo">
                     <div class="site-logo-print--wrapper ng-scope">
                         <a href="../../index.html">
@@ -32,64 +32,104 @@
                 </div>
             </div>
 
-            <div class="medium-4 large-4 columns">
+            <!--Search bar-->
+            <div class="large-7 medium-7 columns" id="search-header">
+                <div class="search row collapse radius" id="search">
+                    <div class="small-8 medium-10 columns">
+                        <div>
+                            <div>
+
+                                <div>
+                                    <input role="search" class="no-shadow no-border ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength">
+
+                                    <span class="clear-input">
+                                        <a>
+                                            <span class="show-for-sr">Clear field</span>
+                                            <span aria-hidden="true">×</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-4 medium-2 columns">
+                        <button class="button header-button postfix radius" type="submit">
+                            <span class="iconWrapperNoBg iconSearchHeader">
+                                <span class="icon-search" aria-hidden="true">
+                                </span>
+                                <span class="show-for-sr">
+                                    Search
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="medium-3 large-3 columns">
                 <!-- Right Header Side -->
                 <div class="right-header-side">
                     <!-- Main Navigation -->
                     <div id="main-navigation">
                         <nav role="navigation">
                             <ul>
-                                <li>
-                                    <a href="">Arts and Culture</a>
-                                </li>
-                                <li>
-                                    <a href="">Business and Economy</a>
-                                </li>
-                                <li>
-                                    <a href="../driving-and-roads/driving-and-roads.html">Driving and Roads</a>
-                                </li>
-                                <li>
-                                    <a href="../education-and-training/education-and-training.html">Education and Training</a>
-                                </li>
-                                <li>
-                                    <a href="">Environment and Energy</a>
-                                </li>
-                                <li>
-                                    <a href="../government/government.html">Government</a>
-                                </li>
-                                <li>
-                                    <a href="">Health and Wellness</a>
-                                </li>
-                                <li>
-                                    <a href="">Home and Community</a>
-                                </li>
-                                <li>
-                                    <a href="">Jobs and Employment</a>
-                                </li>
-                                <li>
-                                    <a href="">Law and Safety</a>
-                                </li>
-                                <li>
-                                    <a href="">Rural and North</a>
-                                </li>
-                                <li>
-                                    <a href="">Taxes and Benefits</a>
-                                </li>
-                                <li>
-                                    <a href="">Travel and Recreation</a>
-                                </li>
+                                <div id="mobile-search">
+                                    <div class="row">
+                                        <div class="columns small-9">
+                                            <input type="text">
+                                        </div>
+                                        <div class="columns small-3">
+                                            <button>Search</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="nav-links">
+                                    <li>
+                                        <a href="">Arts and Culture</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Business and Economy</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/driving-and-roads/driving-and-roads.html">Driving and Roads</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/education-and-training/education-and-training.html">Education
+                                            and
+                                            Training</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Environment and Energy</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/government/government.html">Government</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Health and Wellness</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Home and Community</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Jobs and Employment</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/law-and-safety/law-and-safety.html">Law and Safety</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Rural and North</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Taxes and Benefits</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Travel and Recreation</a>
+                                    </li>
+                                </div>
+
                             </ul>
                         </nav>
-                    </div>
-                    <!-- Search Icon -->
-                    <div id="search-icon">
-                        <span class="iconWrapperNoBg iconSearchHeader">
-                            <span class="icon-search" aria-hidden="true">
-                            </span>
-                            <span class="show-for-sr ng-binding">
-                                Search
-                            </span>
-                        </span>
                     </div>
                     <!-- Lang toggle-->
                     <div class="lang-toggle">
@@ -103,44 +143,6 @@
             </div>
         </div>
     </header>
-
-    <!--Search Popup-->
-    <section>
-        <div class="row" id="search-popup">
-            <div class="small-12 columns search-popup-checkboxes">
-                <input type="radio" name="section-search" value="allOntario" id="allOntario" checked>
-                <label for="allOntario">All of Ontario.ca</label>
-                <input type="radio" name="section-search" value="thisSection" id="thisSection">
-                <label for="thisSection">In this Section</label>
-            </div>
-            <div class="close">
-                <a href="#">X</a>
-            </div>
-            <div class="small-12 columns search-popup-searchbar">
-                <div class="search collapse radius" id="search">
-                    <div class="small-8 medium-10 columns">
-                        <div submit="submit" search="search" class="ng-isolate-scope">
-                            <div>
-                                <div class="clear-input--wrapper ng-scope">
-                                    <input aria-label="Search" autocapitalize="none" role="search" class="no-shadow ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength">
-                                    <span class="clear-input">
-                                        <a tabindex="0">
-                                            <span class="show-for-sr ng-binding">Clear field</span>
-                                            <span aria-hidden="true">×</span>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="small-4 medium-2 columns">
-                        <button class="button header-button postfix radius" type="submit">Search
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- breadcrumbs -->
     <section class="breadcrumbs-container">
@@ -165,39 +167,7 @@
     <!-- Main -->
     <main role="main">
         <div class="row">
-            <!-- left hand side -->
-            <div class="large-4 medium-4 small-12 columns">
-                <div class="in-this-section-desktop">
-                    <h4>In this Section</h4>
-                    <nav role="navigation" id="navigation">
-                        <ul class="side-nav">
-                            <li>
-                                <a href="">Digital Service Standard</a>
-                            </li>
-                            <li>
-                                <a href="#">Ontario Design Guide</a>
-                            </li>
-                            <li>
-                                <a href="#">Ontario Style Guide</a>
-                            </li>
-                            <li>
-                                <a href="#">User Research Guide</a>
-                            </li>
-                            <li>
-                                <a href="#">Inclusive Design Toolkit</a>
-                            </li>
-                            <li>
-                                <a href="#">Service Design Playbook</a>
-                            </li>
-                            <li>
-                                <a href="#">Printable Downloads</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <!-- right hand side -->
-            <div class="large-8 medium-8 small-12 columns">
+            <div class="large-12 medium-12 small-12 columns">
                 <div class="row intro">
                     <div class="columns small-12">
                         <h1>Resources</h1>
@@ -205,110 +175,105 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="small-12 columns">
-                        <div class="in-this-section">
-                            <a href="#" class="button">In this Section
-                                <span>
-                                    <img src="../../img/arrow.png" alt="arrow">
-                                </span>
-                            </a>
-                            <nav role="navigation" id="navigation">
-                                <ul class="side-nav">
-                                    <li>
-                                        <a href="">Digital Service Standard</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Ontario Design Guide</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Ontario Style Guide</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">User Research Guide</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Inclusive Design Toolkit</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Service Design Playbook</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Printable Downloads</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
                     <div class="main-content small-12 columns">
                         <h2>Digital Service Standard</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequuntur eveniet quas facilis
-                            unde aliquam possimus commodi assumenda veritatis porro quia dicta aperiam harum voluptatibus
-                            pariatur veniam quae voluptates laboriosam, ea eius quibusdam doloremque totam optio. Pariatur
-                            iste nemo magnam eligendi odio consectetur, ad architecto delectus dignissimos. Minus dolorum
-                            reprehenderit autem earum laboriosam at molestias, unde voluptatum quibusdam, explicabo praesentium!
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequuntur eveniet quas
+                            facilis
+                            unde aliquam possimus commodi assumenda veritatis porro quia dicta aperiam harum
+                            voluptatibus
+                            pariatur veniam quae voluptates laboriosam, ea eius quibusdam doloremque totam optio.
+                            Pariatur
+                            iste nemo magnam eligendi odio consectetur, ad architecto delectus dignissimos. Minus
+                            dolorum
+                            reprehenderit autem earum laboriosam at molestias, unde voluptatum quibusdam, explicabo
+                            praesentium!
                             Ipsum quae quaerat iure soluta ullam saepe. Possimus, id itaque!</p>
                         <a href="#">Read the Digital Service Standard</a>
 
                         <hr>
                         <h2>Ontario Design Guide</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid saepe temporibus vel laborum necessitatibus
-                            modi odio libero enim quo officiis voluptatum, blanditiis unde! Ullam vitae natus sed est consectetur
-                            temporibus voluptatibus eligendi exercitationem, obcaecati dignissimos quidem, perspiciatis excepturi
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid saepe temporibus vel
+                            laborum necessitatibus
+                            modi odio libero enim quo officiis voluptatum, blanditiis unde! Ullam vitae natus sed est
+                            consectetur
+                            temporibus voluptatibus eligendi exercitationem, obcaecati dignissimos quidem, perspiciatis
+                            excepturi
                             dolorum fuga.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quae vero laudantium laborum sequi
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quae vero laudantium laborum
+                            sequi
                             fuga voluptates esse maiores explicabo ex?</p>
                         <a href="#">Read the Ontario Design Guide</a>
 
                         <hr>
                         <h2>Ontario Style Guide</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus doloremque dicta et
-                            placeat eos, minus totam rem fuga nam facere perspiciatis velit amet assumenda, officiis, exercitationem
-                            modi? Mollitia odio tempora inventore beatae. Dolorum eveniet quae nobis tempora. Nam, sint!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus doloremque
+                            dicta et
+                            placeat eos, minus totam rem fuga nam facere perspiciatis velit amet assumenda, officiis,
+                            exercitationem
+                            modi? Mollitia odio tempora inventore beatae. Dolorum eveniet quae nobis tempora. Nam,
+                            sint!</p>
                         <a href="#">Check out Ontario's Style Guide</a>
 
                         <hr>
                         <h2>User Research Guide</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quasi quaerat voluptate at, nobis
-                            ea architecto harum, a et quisquam debitis porro natus fugit doloribus assumenda necessitatibus,
-                            eligendi odit quibusdam. Illo, molestias vero. A aperiam modi esse, veniam odio recusandae officia
-                            tempore voluptas delectus, molestias quis, eveniet alias voluptatum! Eveniet quis fugit laudantium
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quasi quaerat voluptate
+                            at, nobis
+                            ea architecto harum, a et quisquam debitis porro natus fugit doloribus assumenda
+                            necessitatibus,
+                            eligendi odit quibusdam. Illo, molestias vero. A aperiam modi esse, veniam odio recusandae
+                            officia
+                            tempore voluptas delectus, molestias quis, eveniet alias voluptatum! Eveniet quis fugit
+                            laudantium
                             asperiores necessitatibus minus vitae reiciendis cum voluptates.</p>
                         <a href="#">Read our User Research Guide</a>
 
                         <hr>
                         <h2>Inclusive Design Toolkit</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quae ducimus incidunt numquam eveniet
-                            aperiam sequi dolorum at quam ex accusantium, dolores, mollitia laudantium? Voluptate perferendis
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quae ducimus incidunt numquam
+                            eveniet
+                            aperiam sequi dolorum at quam ex accusantium, dolores, mollitia laudantium? Voluptate
+                            perferendis
                             dolores eligendi repellat sequi.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, reiciendis. Iusto quas, recusandae
-                            nobis, perspiciatis repellat tempore at fuga omnis esse aliquid distinctio voluptates. Voluptate,
-                            enim modi maiores ducimus nam et distinctio eaque accusantium, incidunt molestiae odio ipsum.
-                            Dolore consectetur, libero iste iure saepe et asperiores autem mollitia dicta quos quo id quod
-                            perferendis sequi dolor aperiam exercitationem. Impedit at eius, laboriosam quas quae eligendi
-                            ipsam quis, reprehenderit alias fuga possimus vitae provident veritatis ducimus rerum repellat.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, reiciendis. Iusto quas,
+                            recusandae
+                            nobis, perspiciatis repellat tempore at fuga omnis esse aliquid distinctio voluptates.
+                            Voluptate,
+                            enim modi maiores ducimus nam et distinctio eaque accusantium, incidunt molestiae odio
+                            ipsum.
+                            Dolore consectetur, libero iste iure saepe et asperiores autem mollitia dicta quos quo id
+                            quod
+                            perferendis sequi dolor aperiam exercitationem. Impedit at eius, laboriosam quas quae
+                            eligendi
+                            ipsam quis, reprehenderit alias fuga possimus vitae provident veritatis ducimus rerum
+                            repellat.
                             Saepe, quos iure!</p>
                         <a href="#">View the Inclusive Design Toolkit</a>
 
                         <hr>
                         <h2>Service Design Playbook</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, illo!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et sequi perferendis asperiores suscipit,
-                            non hic, nam dignissimos eum quos facilis! Eos repudiandae, id fugiat eum obcaecati dolorum dolores
-                            labore quo fugit blanditiis enim laudantium ex qui sapiente ratione molestiae libero deserunt
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et sequi perferendis
+                            asperiores suscipit,
+                            non hic, nam dignissimos eum quos facilis! Eos repudiandae, id fugiat eum obcaecati dolorum
+                            dolores
+                            labore quo fugit blanditiis enim laudantium ex qui sapiente ratione molestiae libero
+                            deserunt
                             minima. Assumenda tenetur maiores deserunt, dolorem sequi at?</p>
                         <a href="#">Read the Service Design Playbook</a>
 
                         <hr>
                         <h2>Printable Downloads</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repudiandae. Sequi maiores eaque
-                            vel blanditiis tempore, sit ipsum adipisci accusamus. Hic assumenda placeat eos, autem voluptatem
-                            iste porro temporibus non, officia sint suscipit consectetur ad nam reprehenderit animi quae
-                            facere aut blanditiis consequatur dignissimos fuga. Magni soluta dolorem sint repudiandae accusamus
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repudiandae. Sequi maiores
+                            eaque
+                            vel blanditiis tempore, sit ipsum adipisci accusamus. Hic assumenda placeat eos, autem
+                            voluptatem
+                            iste porro temporibus non, officia sint suscipit consectetur ad nam reprehenderit animi
+                            quae
+                            facere aut blanditiis consequatur dignissimos fuga. Magni soluta dolorem sint repudiandae
+                            accusamus
                             tenetur temporibus natus, optio numquam repellendus ipsam dolore aut?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa fugit repudiandae quas illum
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa fugit repudiandae quas
+                            illum
                             aspernatur, accusantium voluptates necessitatibus! Animi, praesentium.</p>
                         <a href="#">View our Printable Downloads</a>
                     </div>
@@ -350,7 +315,8 @@
                 </ul>
                 <p class="copyright">
                     <small ng-switch="language">
-                        <a href="/page/copyright-information-c-queens-printer-ontario" class="ng-binding">© Queen’s Printer for Ontario, 2012‑18</a>
+                        <a href="/page/copyright-information-c-queens-printer-ontario" class="ng-binding">© Queen’s
+                            Printer for Ontario, 2012‑18</a>
                     </small>
                 </p>
             </div>

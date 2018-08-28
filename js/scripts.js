@@ -2,7 +2,7 @@
     //main navigation toggle
     $('#main-navigation-button').on('click', function() {
         $('#main-navigation').toggleClass('main-nav-open');
-        $('#search-popup').slideUp();
+        $('main').toggleClass('search-popup-active')
     })
 
 

@@ -16,7 +16,7 @@
     <header ng-class="default" id="ng-view-header" class="ng-isolate-scope">
         <div class="row">
             <!-- Logo/Left Header Side -->
-            <div class="small-5 medium-8 large-8 columns site-logo-print--wrapper ng-scope">
+            <div class="small-5 medium-2 large-2 columns site-logo-print--wrapper ng-scope">
                 <div id="logo">
                     <div class="site-logo-print--wrapper ng-scope">
                         <a href="../../index.html">
@@ -32,64 +32,104 @@
                 </div>
             </div>
 
-            <div class="medium-4 large-4 columns">
+            <!--Search bar-->
+            <div class="large-7 medium-7 columns" id="search-header">
+                <div class="search row collapse radius" id="search">
+                    <div class="small-8 medium-10 columns">
+                        <div>
+                            <div>
+
+                                <div>
+                                    <input role="search" class="no-shadow no-border ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength">
+
+                                    <span class="clear-input">
+                                        <a>
+                                            <span class="show-for-sr">Clear field</span>
+                                            <span aria-hidden="true">×</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-4 medium-2 columns">
+                        <button class="button header-button postfix radius" type="submit">
+                            <span class="iconWrapperNoBg iconSearchHeader">
+                                <span class="icon-search" aria-hidden="true">
+                                </span>
+                                <span class="show-for-sr">
+                                    Search
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="medium-3 large-3 columns">
                 <!-- Right Header Side -->
                 <div class="right-header-side">
                     <!-- Main Navigation -->
                     <div id="main-navigation">
                         <nav role="navigation">
                             <ul>
-                                <li>
-                                    <a href="">Arts and Culture</a>
-                                </li>
-                                <li>
-                                    <a href="">Business and Economy</a>
-                                </li>
-                                <li>
-                                    <a href="../driving-and-roads/driving-and-roads.html">Driving and Roads</a>
-                                </li>
-                                <li>
-                                    <a href="../education-and-training/education-and-training.html">Education and Training</a>
-                                </li>
-                                <li>
-                                    <a href="">Environment and Energy</a>
-                                </li>
-                                <li>
-                                    <a href="../government/government.html">Government</a>
-                                </li>
-                                <li>
-                                    <a href="">Health and Wellness</a>
-                                </li>
-                                <li>
-                                    <a href="">Home and Community</a>
-                                </li>
-                                <li>
-                                    <a href="">Jobs and Employment</a>
-                                </li>
-                                <li>
-                                    <a href="">Law and Safety</a>
-                                </li>
-                                <li>
-                                    <a href="">Rural and North</a>
-                                </li>
-                                <li>
-                                    <a href="">Taxes and Benefits</a>
-                                </li>
-                                <li>
-                                    <a href="">Travel and Recreation</a>
-                                </li>
+                                <div id="mobile-search">
+                                    <div class="row">
+                                        <div class="columns small-9">
+                                            <input type="text">
+                                        </div>
+                                        <div class="columns small-3">
+                                            <button>Search</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="nav-links">
+                                    <li>
+                                        <a href="">Arts and Culture</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Business and Economy</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/driving-and-roads/driving-and-roads.html">Driving and Roads</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/education-and-training/education-and-training.html">Education
+                                            and
+                                            Training</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Environment and Energy</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/government/government.html">Government</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Health and Wellness</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Home and Community</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Jobs and Employment</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages/law-and-safety/law-and-safety.html">Law and Safety</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Rural and North</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Taxes and Benefits</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Travel and Recreation</a>
+                                    </li>
+                                </div>
+
                             </ul>
                         </nav>
-                    </div>
-                    <!-- Search Icon -->
-                    <div id="search-icon">
-                        <span class="iconWrapperNoBg iconSearchHeader">
-                            <span class="icon-search" aria-hidden="true">
-                            </span>
-                            <span class="show-for-sr ng-binding">
-                                Search
-                            </span>
-                        </span>
                     </div>
                     <!-- Lang toggle-->
                     <div class="lang-toggle">
@@ -103,44 +143,6 @@
             </div>
         </div>
     </header>
-
-    <!--Search Popup-->
-    <section>
-        <div class="row" id="search-popup">
-            <div class="small-12 columns search-popup-checkboxes">
-                <input type="radio" name="section-search" value="allOntario" id="allOntario" checked>
-                <label for="allOntario">All of Ontario.ca</label>
-                <input type="radio" name="section-search" value="thisSection" id="thisSection">
-                <label for="thisSection">In this Section</label>
-            </div>
-            <div class="close">
-                <a href="#">X</a>
-            </div>
-            <div class="small-12 columns search-popup-searchbar">
-                <div class="search collapse radius" id="search">
-                    <div class="small-8 medium-10 columns">
-                        <div submit="submit" search="search" class="ng-isolate-scope">
-                            <div>
-                                <div class="clear-input--wrapper ng-scope">
-                                    <input aria-label="Search" autocapitalize="none" role="search" class="no-shadow ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength">
-                                    <span class="clear-input">
-                                        <a tabindex="0">
-                                            <span class="show-for-sr ng-binding">Clear field</span>
-                                            <span aria-hidden="true">×</span>
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="small-4 medium-2 columns">
-                        <button class="button header-button postfix radius" type="submit">Search
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- breadcrumbs-->
     <section class="breadcrumbs-container">
@@ -159,102 +161,55 @@
         </div>
     </section>
 
-     <!-- Hero Image -->
-     <section class="hero-image">
-            <img src="../../img/digital-gov-banner1920x560.jpg" alt="">
-        </section>
+    <!-- Hero Image -->
+    <section class="hero-image">
+        <img src="../../img/digital-gov-banner1920x560.jpg" alt="">
+    </section>
 
     <!-- Main -->
     <main role="main">
         <div class="row">
-            <!-- left hand side -->
-            <div class="large-4 medium-4 small-12 columns">
-                    <div class="in-this-section-desktop">
-                            <h4>In this Section</h4>
-                            <nav role="navigation" id="navigation">
-                                <ul class="side-nav">
-                                    <li>
-                                        <a href="../government/about.html">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="../government/resources.html">Resources</a>
-                                    </li>
-                                    <li>
-                                        <a href="../government/our-partners.html">Our Partners</a>
-                                    </li>
-                                    <li>
-                                        <a href="../government/get-in-touch.html">Get in touch</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-            </div>
-            <!-- right hand side -->
-            <div class="large-8 medium-8 small-12 columns">
+            <div class="large-12 medium-12 small-12 columns">
                 <div class="row intro">
                     <div class="columns small-12">
                         <h1>Ontario Digital Service</h1>
                         <p>Making government work better for people in the digital age.</p>
                     </div>
-    
-                </div>
-                <div class="row">
-                    <div class="small-12 columns">
-                        <div class="in-this-section">
-                            <a href="#" class="button">In this Section
-                                <span>
-                                    <img src="../../img/arrow.png" alt="arrow">
-                                </span>
-                            </a>
-                            <nav role="navigation" id="navigation">
-                                <ul class="side-nav">
-                                    <li>
-                                        <a href="../government/about.html">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="../government/resources.html">Resources</a>
-                                    </li>
-                                    <li>
-                                        <a href="../government/our-partners.html">Our Partners</a>
-                                    </li>
-                                    <li>
-                                        <a href="../government/get-in-touch.html">Get in touch</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-    
+
                 </div>
                 <div class="row">
                     <div class="main-content small-12 columns">
                         <h2>About Us: Simper, better, faster services</h2>
                         <p>Across Ontario, people access government services and information online, everyday.</p>
-                        <p>It’s time we made it easier to do that – whether it’s ordering a vehicle permit, applying for student
+                        <p>It’s time we made it easier to do that – whether it’s ordering a vehicle permit, applying
+                            for student
                             aid or finding a health service near home.</p>
-                        <p>Enter Digital Government. It’s our commitment to improve the online experience for citizens and transform
+                        <p>Enter Digital Government. It’s our commitment to improve the online experience for citizens
+                            and transform
                             the most important government services.</p>
-    
+
                         <hr>
                         <h2>How We'll Do It</h2>
                         <div class="row h4">
                             <div class="small-12 medium-4 columns">
                                 <h3>A better user experience</h3>
-    
-                                <p>Re-design a series of high-impact signature projects to visibly improve the citizen’s experience
+
+                                <p>Re-design a series of high-impact signature projects to visibly improve the
+                                    citizen’s experience
                                     with government.</p>
                             </div>
-    
+
                             <div class="small-12 medium-4 columns">
                                 <h3>Top digital talent</h3>
-    
-                                <p>Attract, nurture and empower the next generation of digital talent through creating new work
+
+                                <p>Attract, nurture and empower the next generation of digital talent through creating
+                                    new work
                                     opportunities.</p>
                             </div>
-    
+
                             <div class="small-12 medium-4 columns">
                                 <h3>Consistently good services</h3>
-    
+
                                 <p>Establish a new, modern set of common
                                     <a href="/page/good-path">digital service standards</a> for the organization.</p>
                             </div>
@@ -262,54 +217,60 @@
                         <div class="row h4">
                             <div class="small-12 medium-4 columns">
                                 <h3>A dedicated digital office</h3>
-    
+
                                 <p>Hillary Hartley has been
-                                    <a href="https://news.ontario.ca/maesd/en/2017/3/ontario-names-first-chief-digital-officer.html">appointed as our first Chief Digital Officer</a> to lead a new digital service team and transformation
+                                    <a href="https://news.ontario.ca/maesd/en/2017/3/ontario-names-first-chief-digital-officer.html">appointed
+                                        as our first Chief Digital Officer</a> to lead a new digital service team and
+                                    transformation
                                     across government.</p>
                             </div>
-    
+
                             <div class="small-12 medium-4 columns">
                                 <h3>Open, participatory government</h3>
-    
-                                <p>Make it easier for people to participate in, and provide input on, government decisions.</p>
+
+                                <p>Make it easier for people to participate in, and provide input on, government
+                                    decisions.</p>
                             </div>
-    
+
                             <div class="small-12 medium-4 columns">
                                 <h3>An inclusive, digitally enabled province</h3>
-    
-                                <p>Create opportunities for people to advance or gain new digital skills, especially those most
+
+                                <p>Create opportunities for people to advance or gain new digital skills, especially
+                                    those most
                                     in need.</p>
                             </div>
                         </div>
-    
+
                         <hr>
                         <h2>The Work</h2>
-                        <div class="panel">A cornerstone of delivering digital transformation is showing our work – out loud and as we go.</div>
+                        <div class="panel">A cornerstone of delivering digital transformation is showing our work – out
+                            loud and as we go.</div>
                         <div class="row h4">
                             <div class="small-12 medium-4 columns">
                                 <h3>
                                     <a href="https://talks.ontario.ca/">Budget Talks</a>
                                 </h3>
-    
-                                <p>A modern, interactive web platform used to gather real ideas from real people to help build the
+
+                                <p>A modern, interactive web platform used to gather real ideas from real people to
+                                    help build the
                                     budget.</p>
                             </div>
-    
+
                             <div class="small-12 medium-4 columns">
                                 <h3>
                                     <a href="/page/high-occupancy-toll-hot-lanes">
                                         <abbr title="High-occupancy toll">HOT</abbr> Lanes permits</a>
                                 </h3>
-    
+
                                 <p>Quick and simple sign up to enter the lottery for a fast-lane permit along the
                                     <abbr title="Queen Elizabeth Way">QEW</abbr> Oakville-Burlington corridor.</p>
                             </div>
-    
+
                             <div class="small-12 medium-4 columns">
                                 <h3>
                                     <a href="/page/government-ontario">Ontario.ca</a>
                                 </h3>
-    
+
                                 <p>The online destination for government information and services – around the clock.</p>
                             </div>
                         </div>
@@ -318,77 +279,89 @@
                                 <h3>
                                     <a href="http://www.lcbo.com/content/lcbo/en/homepage/thousands-of-your-favourites-now-available-online.html">LCBO.com</a>
                                 </h3>
-    
+
                                 <p>Conveniently order beverage alcohol products online at your convenience.</p>
                             </div>
-    
+
                             <div class="small-12 medium-4 columns">
                                 <h3>
                                     <a href="/locations/health/">Health care options</a>
                                 </h3>
-    
+
                                 <p>Find the nearest health care service in your neighbourhood.</p>
                             </div>
-    
+
                             <div class="small-12 medium-4 columns">
                                 <h3>
                                     <a href="/page/consultations-directory">Consultations directory</a>
                                 </h3>
-    
+
                                 <p>Tell government what you think about proposed new policies and laws.</p>
                             </div>
                         </div>
-    
+
                         <hr>
                         <h2>The Team</h2>
-                        <div class="panel">Meet the coders, user experience experts, content designers, product managers, digital strategists, data
+                        <div class="panel">Meet the coders, user experience experts, content designers, product
+                            managers, digital strategists, data
                             nerds and partners shaking it up inside government.</div>
                         <div class="row">
                             <div class="columns small-12 medium-4">
                                 <p>
-                                    <a class="button secondary" href="https://medium.com/ontariodigital/meet-the-digital-team-2a03c8cddf74#.jp7s2wdsx">Team profiles</a>
+                                    <a class="button secondary" href="https://medium.com/ontariodigital/meet-the-digital-team-2a03c8cddf74#.jp7s2wdsx">Team
+                                        profiles</a>
                                 </p>
                             </div>
-    
+
                             <div class="columns small-12 medium-8">
                                 <p>
-                                    <a class="button secondary" href="https://medium.com/ontariodigital" analytics-on="click">Follow the blog</a>
+                                    <a class="button secondary" href="https://medium.com/ontariodigital" analytics-on="click">Follow
+                                        the blog</a>
                                 </p>
                             </div>
                         </div>
-    
+
                         <hr>
                         <h2>Milestones</h2>
                         <hr>
                         <p class="uppercase">APRIL 2017</p>
                         <h3>Code for Canada</h3>
-                        <p>Ontario has partnered with tech leaders to co-found Code for Canada, a not-for-profit organization that
-                            develops digital solutions to make government services more user-friendly and easier to access. Code
-                            for Canada connects coders and designers with governments to enhance digital literacy and develop
+                        <p>Ontario has partnered with tech leaders to co-found Code for Canada, a not-for-profit
+                            organization that
+                            develops digital solutions to make government services more user-friendly and easier to
+                            access. Code
+                            for Canada connects coders and designers with governments to enhance digital literacy and
+                            develop
                             technology-based solutions to improve peoples' lives.</p>
-    
+
                         <hr>
                         <p class="uppercase">Winter/spring 2017</p>
                         <h3>The Ontario Government @ The Communitech Hub</h3>
-                        <p>An Ontario digital outpost will open among other tech and non-tech organizations using 50,000+ square
+                        <p>An Ontario digital outpost will open among other tech and non-tech organizations using
+                            50,000+ square
                             feet dedicated to world-leading innovation and collaboration in Kitchener-Waterloo.</p>
-    
+
                         <hr>
                         <p class="uppercase">January 2017</p>
                         <h3>
-                            <a href="https://www.ontario.ca/page/digital-internships-ontario-government">Ontario Internship Program – Digital (
+                            <a href="https://www.ontario.ca/page/digital-internships-ontario-government">Ontario
+                                Internship Program – Digital (
                                 <abbr title="Information + Information Technology">I+IT</abbr> Stream)</a>
                         </h3>
-                        <p>A new stream of the Ontario Internship Program will be introduced to recruit in-demand digital skills
-                            to the organization, providing high-impact opportunities to recent graduates looking to use their
+                        <p>A new stream of the Ontario Internship Program will be introduced to recruit in-demand
+                            digital skills
+                            to the organization, providing high-impact opportunities to recent graduates looking to use
+                            their
                             talents and passion to improve online services.</p>
-    
+
                         <hr>
                         <p class="uppercase">March 2018</p>
                         <h3>Digital Government Action Plan</h3>
                         <p>Ontario has released an
-                            <a href="https://www.ontario.ca/document/start-users-deliver-together/">action plan</a> that will serve as the public roadmap for Ontario’s digital transformation, focusing
-                            on enabling better online services designed around user needs and equipping the province to lead
+                            <a href="https://www.ontario.ca/document/start-users-deliver-together/">action plan</a>
+                            that will serve as the public roadmap for Ontario’s digital transformation, focusing
+                            on enabling better online services designed around user needs and equipping the province to
+                            lead
                             in the digital era.</p>
                     </div>
                 </div>
@@ -428,7 +401,8 @@
                 </ul>
                 <p class="copyright">
                     <small ng-switch="language">
-                        <a href="/page/copyright-information-c-queens-printer-ontario" class="ng-binding">© Queen’s Printer for Ontario, 2012‑18</a>
+                        <a href="/page/copyright-information-c-queens-printer-ontario" class="ng-binding">© Queen’s
+                            Printer for Ontario, 2012‑18</a>
                     </small>
                 </p>
             </div>

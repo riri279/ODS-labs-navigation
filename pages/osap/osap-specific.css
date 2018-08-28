@@ -156,7 +156,7 @@ ul.sub-nav-osap {
     left: 0;
     top: 54px;
     border: 1px solid #dadada;
-    width: 300px;
+    width: 200px;
     z-index: 90;
     /* padding: 5px; */
 }
@@ -252,8 +252,20 @@ ul.sub-nav-osap li a:hover,
     left: 65px;
 }
 
+#osap-breadcrumbs {
+    background: rgba(42, 121, 189, 0.2);
+}
 
 
+@media (max-width: 1100px) {
+    ul.sub-nav-osap {
+        width: 150%;
+    }
+
+    ul.sub-nav-osap:before {
+        left: 32%;
+    }
+}
 
 @media (max-width: 1050px) {
     .osap-column-two,
@@ -287,4 +299,8 @@ ul.sub-nav-osap li a:hover,
         right: 0;
         top: 0;
     }
+
+    ul.sub-nav-osap {
+        width: auto;
+    } 
 }
