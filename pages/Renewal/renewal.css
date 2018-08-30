@@ -8,6 +8,11 @@
 	justify-content: space-between
 }
 
+.mobile-form-title.active {
+	color: white;
+	background: #003359;
+}
+
 .mobile-form-section {
 	margin-top: 10px;
 }
