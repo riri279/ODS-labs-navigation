@@ -530,7 +530,7 @@ main .osap-header {
     }
 
     #driver-licensing {
-        padding: 0 15px;
+        padding: 15px;
     }
 
     .hero-image {
@@ -543,6 +543,10 @@ main .osap-header {
 
     #main-navigation ul:before {
         border-color: transparent transparent #d4e4f2;
+    }
+    
+    main {
+        margin-top: 10px;
     }
 }
 

@@ -1,4 +1,70 @@
-body{
-	background-color:red;
+.mobile-form-title {
+	padding: 15px;
+	color: #003359;
+	background:#EDEBE9;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between
 }
+
+.mobile-form-section {
+	margin-top: 10px;
+}
+
+.mobile-form-title p {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.mobile-form-title .checkmark {
+	color: white;
+	background: #326F42;
+	border-radius: 100%;
+	width: 27px;
+	height: 27px;
+	align-self: center;
+	text-align: center;
+	display: none;
+}
+
+.mobile-form-content {
+	padding: 15px;
+	display: none;
+}
+
+#mobile-terms-of-agreement .mobile-form-content {
+	display: block;
+}
+
+.mobile-form-content.closed,
+#mobile-terms-of-agreement .mobile-form-content.closed {
+	display: none;
+}
+
+
+.mobile-previous.button {
+	background: #d8e0e6;
+	color: black;
+}
+
+.question {
+	margin-bottom: 25px;
+}
+
+.question p {
+	font-weight: bold;
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+
+.label-question {
+	background: #003359;
+	color: white;
+	border-radius: 100%;
+	display: inline-block;
+	width: 25px;
+	height: 26px;
+	vertical-align: middle;
+	text-align: center;
 }
