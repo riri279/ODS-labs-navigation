@@ -1,0 +1,109 @@
+
+@media only screen and (max-width: 600px) {
+    #desktop{
+    	display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #mobile{
+    	display: none;
+    }
+}
+
+.renewal-page{
+	min-height: 400px;
+}
+
+.renewal-side-nav{
+	border-bottom: 1px solid #dadada;
+}
+
+.renewal-side-nav-link{
+	display: block;
+	color: black;
+	padding-bottom:10px;
+}
+
+.renewal-side-nav-link:hover{
+	text-decoration: none;
+	color: #06c;
+}
+
+.logo{
+	padding-bottom:10px;
+	height: 55px;
+}
+
+.hide{
+	display: none;
+}
+
+.page-title-bar{
+	background-color: #191970;
+    color: white;
+    font-weight: 1000;
+    font-size: 25px;
+    padding-left: 10px;
+    line-height: 45px;
+}
+
+.breadcrumbs-container{
+	padding-bottom:0px;
+}
+
+.renewal-next{
+	float: right;
+}
+
+.renewal-previous{
+	color: black;
+	background-color: #f5f5f5;
+}
+
+.renewal-button{
+	width:150px;
+	margin-right: 0px;
+}
+
+.renewal-text-content{
+	font-weight: 1000;
+    padding: 10px;
+}
+
+.renewal-radio{
+	padding-left: 30px;
+}
+
+.renewal-text-input{
+	display: inline-block !important;
+	width: 300px !important;
+}
+
+.renewal-text-input-label{
+	display: inline-block;
+}
+
+.input-header{
+	font-weight:1000;
+}
+
+.input-field{
+	padding-bottom: 10px;
+}
+
+.renewal-button{
+	margin-top: 20px;
+}
+
+.fake-text{
+	padding: 20px;
+}
+
+.renewal-checkmark{
+	padding-left: 10px;
+}
+
+.renewal-current{
+	color: #06c;
+}

@@ -172,6 +172,161 @@
                 <div id="mobile">
                 </div>
                 <div id="desktop">
+                    <h1>Driver's License Renewal Application</h1>
+                    <div class="row">
+                        <div id="side-nav" class="small-3 columns">
+                            <img class="logo" src="logo.png"/>
+                            <h5 class="renewal-side-nav">Steps</h5>
+                            <a goto="1" class="renewal-side-nav-link renewal-current">Terms of agreement<img class="hide renewal-checkmark" src="checked.png"/></a>
+                            <a goto="2" class="renewal-side-nav-link">Address information<img class="hide renewal-checkmark" src="checked.png"/></a>
+                            <a goto="3" class="renewal-side-nav-link">Renewal information<img class="hide renewal-checkmark" src="checked.png"/></a>
+                            <a goto="4" class="renewal-side-nav-link">Contact information<img class="hide renewal-checkmark" src="checked.png"/></a>
+                            <a goto="5" class="renewal-side-nav-link">Review and certify information<img class="hide renewal-checkmark" src="checked.png"/></a>
+                        </div> 
+                        <div id="center-content" class="small-9 columns">
+                            <div id="page1" class="renewal-page">
+                                <div class="page-title-bar">Terms of agreement</div>
+
+                                <section class="Section sectionFixed TitleGreen"> <br> By clicking ''I agree'', you confirm that you have read and understood the information below: <br> <h5 class="header3"> <br>I confirm that I live in Ontario: </h5><ul><li>Ontario is, and will continue to be, my primary home. I will be in Ontario for at least 153 days (approximately five months) in any twelve-month period to keep my <a href="https://www.ontario.ca/page/apply-ohip-and-get-health-card#section-2" title="Select this link to learn more about the OHIP eligibility and residency requirements. Link will open in a new window" target="_blank">OHIP Coverage</a></li><li>ServiceOntario may contact me to confirm that Ontario is my primary home and if contacted, I will respond within 30 days to maintain health coverage</li></ul><h5 class="header3">I understand that my information will be checked: </h5><ul><li>I am completing this renewal application for myself, using the information on my own cards</li><li>It is against the law to knowingly provide incorrect information for anything related to this application</li><li> If there is any change in personal information, I will inform the Ministry of Health and Long-Term Care and the Ministry of Transportation, through ServiceOntario</li><li>My health card and driver’s licence information will be collected by ServiceOntario for the Ministry of Transportation and the Ministry of Health and Long-term Care. This collection is allowed under the authority of section 205 of the Highway Traffic Act and in accordance with the Personal Health Information Protection Act, 2004. <a href="/wps85/portal/s2i/Home/so/ohcdlr/copi" title="Select this link to learn more about the Collection of Personal Information. Link will open in a new window" target="_blank">Learn more about the collection of personal information.</a></li> </ul><br>ServiceOntario respects your right to privacy and values your trust. <a href="http://www.ontario.ca/en/services_for_residents/ONT06_018526.html?WT.ac=PrivacySecurity&amp;WT.govon_mod_loc=LPSRStartPage" title="Select this link to read the ServiceOntario Privacy Statement. This link will open in a new window." target="_blank">Read more about ServiceOntario’s commitment to privacy and security.</a></section>
+
+                                <button goto="2" class="renewal-button renewal-next">I agree</button>
+                            </div>
+                            <div id="page2" class="renewal-page hide">
+                                <div class="page-title-bar">Address information</div>
+                                <div class="renewal-text-content">Your new cards will be sent to the address on file. Have you moved or changed your address in the last 90 days?</div>
+                                <div class="renewal-radio"> 
+                                    <input id="yes" type="radio" name="renewal">
+                                    <label for="yes">Yes</label>
+                                </div>
+                                <div class="renewal-radio">
+                                    <input id="no" type="radio" name="renewal">
+                                    <label for="no">No</label>
+                                </div>
+                                <button goto="1" class="renewal-button renewal-previous">Previous</button>
+                                <button goto="3" class="renewal-button renewal-next">Next</button>
+                            </div>
+                            <div id="page3" class="renewal-page hide">
+                                <div class="page-title-bar">Renewal information</div>
+                                <div class="renewal-text-content">Please enter your information below. It will be used to <a href="https://www.ontario.ca/page/renew-both-your-health-card-and-drivers-licence-online" title="Select this link to be directed to the eligibility requirements page." target="_blank">determine if you are eligible</a> for an online health card and driver’s licence renewal.</div>
+
+                                <div class="input-header">
+                                    Enter your postal code
+                                </div>
+                                <div class="input-field">
+                                    <div class="row">
+                                        <div class="columns small-1"><br></div>
+                                        <div class="columns small-4">
+                                            <label class="renewal-text-input-label"for="pos">Postal code:</label>
+                                        </div>
+                                        <div class="columns small-7">
+                                            <input class="renewal-text-input" name="pos">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="input-header">
+                                    Enter your health card information
+                                </div>
+                                <div class="input-field">
+                                    <div class="row">
+                                        <div class="columns small-1"><br></div>
+                                        <div class="columns small-4">
+                                            <label class="renewal-text-input-label"for="hcn">Health card number:</label>
+                                        </div>
+                                        <div class="columns small-7">
+                                            <input class="renewal-text-input" name="hcn">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-field">
+                                    <div class="row">
+                                        <div class="columns small-1"><br></div>
+                                        <div class="columns small-4">
+                                            <label class="renewal-text-input-label"for="h9n">9 characters on the back of your health card:</label>
+                                        </div>
+                                        <div class="columns small-7">
+                                            <input class="renewal-text-input" name="h9n">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="input-header">
+                                    Enter your driver's license information
+                                </div>
+                                <div class="input-field">
+                                    <div class="row">
+                                        <div class="columns small-1"><br></div>
+                                        <div class="columns small-4">
+                                            <label class="renewal-text-input-label"for="dln">Driver's license number:</label>
+                                        </div>
+                                        <div class="columns small-7">
+                                            <input class="renewal-text-input" name="dln">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-field">
+                                    <div class="row">
+                                        <div class="columns small-1"><br></div>
+                                        <div class="columns small-4">
+                                            <label class="renewal-text-input-label"for="d7n">7 characters in between the asterisks (*) on the front or back of your card:</label>
+                                        </div>
+                                        <div class="columns small-7">
+                                            <input class="renewal-text-input" name="d7n">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="renewal-text-content">Your new cards will be sent to the address on file. Have you moved or changed your address in the last 90 days?</div>
+                                <div class="renewal-radio"> 
+                                    <input id="yes2" type="radio" name="renewal">
+                                    <label for="yes2">Yes</label>
+                                </div>
+                                <div class="renewal-radio">
+                                    <input id="no2" type="radio" name="renewal">
+                                    <label for="no2">No</label>
+                                </div>
+
+                                <div class="renewal-text-content">Your new cards will be sent to the address on file. Have you moved or changed your address in the last 90 days?</div>
+                                <div class="renewal-radio"> 
+                                    <input id="yes3" type="radio" name="renewal">
+                                    <label for="yes3">Yes</label>
+                                </div>
+                                <div class="renewal-radio">
+                                    <input id="no3" type="radio" name="renewal">
+                                    <label for="no3">No</label>
+                                </div>
+
+                                <button goto="2" class="renewal-button renewal-previous">Previous</button>
+                                <button goto="4" class="renewal-button renewal-next">Next</button>
+                            </div>
+                            <div id="page4" class="renewal-page hide">
+                                <div class="page-title-bar">Contact information</div>
+
+                                <div class="fake-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet porta eros. Integer pulvinar et leo eleifend malesuada. Phasellus commodo laoreet justo, sit amet facilisis dui vestibulum vel. Pellentesque lorem arcu, auctor nec ornare dapibus, convallis a leo. Nulla gravida non eros in semper. Praesent suscipit risus viverra, hendrerit elit sed, imperdiet tellus. Mauris facilisis dignissim lacus rhoncus commodo.<br><br>
+
+                                Sed purus elit, sollicitudin id euismod vitae, imperdiet ac nibh. Pellentesque mollis nunc at elit bibendum, suscipit condimentum felis finibus. Integer volutpat viverra dui, nec malesuada quam aliquam vitae. </div>
+                                <button goto="3" class="renewal-button renewal-previous">Previous</button>
+                                <button goto="5" class="renewal-button renewal-next">Next</button>
+                            </div>
+                            <div id="page5" class="renewal-page hide">
+                                <div class="page-title-bar">Review and certify information</div>
+
+                                <div class="fake-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet porta eros. Integer pulvinar et leo eleifend malesuada. Phasellus commodo laoreet justo, sit amet facilisis dui vestibulum vel. Pellentesque lorem arcu, auctor nec ornare dapibus, convallis a leo. Nulla gravida non eros in semper. Praesent suscipit risus viverra, hendrerit elit sed, imperdiet tellus. Mauris facilisis dignissim lacus rhoncus commodo.<br><br>
+
+                                Sed purus elit, sollicitudin id euismod vitae, imperdiet ac nibh. Pellentesque mollis nunc at elit bibendum, suscipit condimentum felis finibus. Integer volutpat viverra dui, nec malesuada quam aliquam vitae. Cras eget turpis condimentum, cursus lacus faucibus, gravida ex. Mauris sagittis finibus viverra. Donec vel purus ut tellus efficitur vulputate. Phasellus efficitur placerat massa, ut vulputate metus placerat at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis venenatis sed augue in volutpat. Vivamus quis libero ut ante fermentum sollicitudin.</div>
+
+                                <button goto="4" class="renewal-button renewal-previous">Previous</button>
+                                <button goto="6" class="renewal-button renewal-next">Submit</button>
+                            </div>
+                            <div id="page6" class="renewal-page hide">
+                                <div class="page-title-bar">Submission confirmation</div>
+
+                                <h2>... confirmed</h2>
+
+                                <button goto="5" class="renewal-button renewal-previous">Previous</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
