@@ -68,7 +68,7 @@
         // localStorage.setItem("item", JSON.stringify(items));
         localStorage.setItem('searchTerm', searchInput);
         localStorage.setItem('pageName', previousPage);
-        window.location.href = "file:///Users/carrieme/Documents/ODS/ODS-labs/feature-nav/pages/search.html"
+        window.location.href = "https://demo-nav.ontariogovernment.ca/pages/search.html"
         console.log(searchInput)
         if (searchInput.val() === '') {
             $('search-title').text('No Search Term Entered!')
