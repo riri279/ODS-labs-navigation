@@ -66,3 +66,49 @@
 .osapLogo{
 	height: 70px;
 }
+
+.search-title {
+	margin-bottom: 30px;
+}
+
+.search-results-container .search-result {
+	margin-bottom: 30px;
+}
+
+.search-results-container .search-result {
+	margin-top: 10px;
+}
+
+.search-category-selection {
+	border-bottom: 1.5px solid #979797;
+	display: flex;
+	flex-direction: row;\
+}
+
+.search-category-selection a {
+	border-bottom: 4px solid white;
+	text-decoration: none;
+	display: block;
+	padding: 0 10px;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.search-category-selection a:hover,
+.search-category-selection a.active {
+	border-bottom: 4px solid #979797;
+	color: #979797;
+}
+
+.search-results-container .search-result p,
+.search-results-container .search-result h5 {
+	margin-bottom: 3px;
+}
+
+.search-results-container .search-result .topic {
+	color:#979797;
+}
+
+#specific-page {
+	display: none;
+}

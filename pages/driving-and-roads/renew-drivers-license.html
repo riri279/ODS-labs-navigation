@@ -39,7 +39,8 @@
                             <div>
 
                                 <div>
-                                    <input role="search" class="no-shadow no-border ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength">
+                                    <input role="search" class="no-shadow no-border ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength"
+                                        id="header-search-input">
 
                                     <span class="clear-input">
                                         <a>
@@ -52,7 +53,7 @@
                         </div>
                     </div>
                     <div class="small-4 medium-2 columns">
-                        <button class="button header-button postfix radius" type="submit">
+                        <button class="button header-button postfix radius" id="header-submit" type="submit">
                             <span class="iconWrapperNoBg iconSearchHeader">
                                 <span class="icon-search" aria-hidden="true">
                                 </span>
@@ -163,318 +164,334 @@
     <main role="main">
         <div class="row">
             <div class="large-12 medium-12 small-12 columns">
-            <div class="row-intro">
-                <div class="small-12 columns">
-                    <div class="ng-scope">
-                        <!-- Service Ontario Logo -->
-                        <div class="site-logo-print--wrapper ng-scope">
-                            <div class="row bottom-margin">
-                                <div class="small-8 medium-5 large-3 end columns">
-                                    <a href="../service-ontario.html" class="hide-for-print">
-                                        <span class="ico-logo-serviceontario">
-                                        </span>
-                                        <span class="show-for-sr">ServiceOntario</span>
-                                    </a>
+                <div class="row-intro">
+                    <div class="small-12 columns">
+                        <div class="ng-scope">
+                            <!-- Service Ontario Logo -->
+                            <div class="site-logo-print--wrapper ng-scope">
+                                <div class="row bottom-margin">
+                                    <div class="small-8 medium-5 large-3 end columns">
+                                        <a href="../service-ontario.html" class="hide-for-print">
+                                            <span class="ico-logo-serviceontario">
+                                            </span>
+                                            <span class="show-for-sr">ServiceOntario</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="small-12 medium-8 columns">
-                    <h1 ng-bind-html="mainController.node.content.title" class="ng-binding">Renew a driver’s licence</h1>
-                    <div class="ng-scope">
-                        <p>You can renew a driver’s licence, online or at a ServiceOntario centre, 180 days before it
-                            expires
-                            and up to 1 year after it expires.</p>
-                        <p>If you have a photo health card that expires at the same time as your driver’s licence, you
-                            may
-                            be able to renew both online.</p>
+                    <div class="small-12 medium-8 columns">
+                        <h1 ng-bind-html="mainController.node.content.title" class="ng-binding">Renew a driver’s
+                            licence</h1>
+                        <div class="ng-scope">
+                            <p>You can renew a driver’s licence, online or at a ServiceOntario centre, 180 days before
+                                it
+                                expires
+                                and up to 1 year after it expires.</p>
+                            <p>If you have a photo health card that expires at the same time as your driver’s licence,
+                                you
+                                may
+                                be able to renew both online.</p>
 
-                        <p>
-                            <a class="button" href="../Renewal/license-renewal.html">Renew
-                                your driver’s licence and/or health card online</a>
-                        </p>
+                            <p>
+                                <a class="button" href="../Renewal/license-renewal.html">Renew
+                                    your driver’s licence and/or health card online</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-4 thumbnail columns">
+                        <img class="radius" src="../../img/drivers-licence-g-sample-en-300x200.jpg">
                     </div>
                 </div>
-                <div class="small-12 medium-4 thumbnail columns">
-                    <img class="radius" src="../../img/drivers-licence-g-sample-en-300x200.jpg">
-                </div>
-            </div>
-            <div class="row">
-                <div class="main-content large-8 medium-12 columns">
-                    <div class="ng-scope">
-                        <div class="row collapse ng-scope">
-                            <h2 class="toc--header small ng-binding">
-                                On this page
-                                <a class="show-on-focus text-right smaller indent ng-binding" href="#toc-end">Skip this
-                                    page navigation</a>
-                            </h2>
-                            <div id="toc" class="small-12 column">
-                                <ol class="cols columns-2">
-                                    <li class="ng-scope">
-                                        <a href="#section-0" class="ng-binding">What you need to know</a>
+                <div class="row">
+                    <div class="main-content large-8 medium-12 columns">
+                        <div class="ng-scope">
+                            <div class="row collapse ng-scope">
+                                <h2 class="toc--header small ng-binding">
+                                    On this page
+                                    <a class="show-on-focus text-right smaller indent ng-binding" href="#toc-end">Skip
+                                        this
+                                        page navigation</a>
+                                </h2>
+                                <div id="toc" class="small-12 column">
+                                    <ol class="cols columns-2">
+                                        <li class="ng-scope">
+                                            <a href="#section-0" class="ng-binding">What you need to know</a>
+                                        </li>
+                                        <li class="ng-scope">
+                                            <a href="#section-1" class="ng-binding">Renew online</a>
+                                        </li>
+                                        <li class="ng-scope">
+                                            <a href="#section-2" class="ng-binding">Cost and delivery</a>
+                                        </li>
+                                        <li class="ng-scope">
+                                            <a href="#section-3" class="ng-binding">Recently moved or need to change
+                                                your
+                                                address</a>
+                                        </li>
+                                        <li class="ng-scope">
+                                            <a href="#section-4" class="ng-binding">Driver's licence photo</a>
+                                        </li>
+                                        <li class="ng-scope">
+                                            <a href="#section-5" class="ng-binding">Renew an expired, cancelled or
+                                                suspended driver’s licence</a>
+                                        </li>
+                                        <li class="ng-scope">
+                                            <a href="#section-6" class="ng-binding">Sex designation</a>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <hr class="thick" id="toc-end">
+                            </div>
+
+                            <div id="pagebody" class="ng-scope">
+                                <h2 id="section-0">What you need to know</h2>
+                                <p>An Ontario driver’s licence is valid for 5 years. You need to renew it every 5 years
+                                    either
+                                    online (if eligible) or at a ServiceOntario centre.</p>
+                                <p>You will receive a renewal notice in the mail or a reminder by email 60 to 90 days
+                                    before
+                                    your driver’s licence is set to expire.</p>
+
+                                <h3>If you are over 80</h3>
+                                <p>You will have to renew your licence every 2 years. Your renewal notice will have
+                                    information
+                                    on:
+                                </p>
+                                <ul>
+                                    <li>taking a vision test</li>
+                                    <li>completing&nbsp; an in-class screening component</li>
+                                    <li>attending a group renewal session</li>
+                                </ul>
+                                <p>If you need a test (vision, written or road), or if you are over 80, you must
+                                    <a href="https://drivetest.ca/find-a-drive-test-centre/find_a_drivetest_centre.html?language_id=1&amp;host_id=b4b4a95b-6b58-4ece-9533-bf90fe62bca5#/locations">visit
+                                        a DriveTest centre.</a> Your renewal notice will have the information on any
+                                    additional
+                                    documents you may require.</p>
+
+                                <p>
+                                    <a href="/page/renew-g-drivers-licence-80-years-and-over">Learn more about driver’s
+                                        licence renewals for seniors</a>
+                                </p>
+
+                                <!-- section 1 -->
+                                <h2 id="section-1">Renew online</h2>
+
+                                <p>You can
+                                    <strong>renew your driver’s licence online</strong> if:</p>
+
+                                <ul>
+                                    <li>you don’t need a new photo (you
+                                        <strong>must</strong> take a new&nbsp;photo every 10 years)</li>
+                                    <li>you have a
+                                        <strong>full licence</strong> (G, M class) that isn’t cancelled, suspended, or
+                                        expired for
+                                        more than 12 months</li>
+                                    <li>you have a
+                                        <strong>combination class</strong> of G1M, G2M, GM1, GM2, M1 or M2 (only the
+                                        full
+                                        portion
+                                        will be renewed online)</li>
+                                    <li>you haven’t updated your address within the last 90 days</li>
+                                    <li>you don’t need tests (vision, written, or road)</li>
+                                    <li>you’re not removing a vision condition</li>
+                                    <li>you have no new medical conditions that may prevent you from driving</li>
+                                    <li>you don’t have outstanding fines</li>
+                                </ul>
+
+                                <p>If you’re not eligible to renew online,
+                                    <a href="https://www.services.gov.on.ca/sf/index.html?&amp;_ga=2.200835565.2123879513.1520256248-1982957601.1505743178#/oneServiceDetail/127/ip/sr">visit
+                                        a ServiceOntario centre</a>.</p>
+
+                                <p>To renew online, you need:</p>
+
+                                <ul>
+                                    <li>your driver’s licence number</li>
+                                    <li>the 7-digit trillium number found on your driver’s licence (
+                                        <abbr title="for example">e.g.</abbr>, *1234567*)</li>
+                                    <li>your postal code</li>
+                                </ul>
+                                <p>
+                                    <a class="button" href="https://www.services.gov.on.ca/wps85/poc/s2i?uri=s2i:s2iLanding_ohcdlr&amp;lang=en&amp;_ga=2.122301896.2123879513.1520256248-1982957601.1505743178">Renew
+                                        your driver's licence and/or health card online</a>
+                                </p>
+
+                                <p>
+                                    <a class="button secondary" href="https://www.services.gov.on.ca/wps85/poc/s2i?uri=s2i:000000021Info&amp;lang=en">Renew
+                                        your driver’s licence only</a>
+                                </p>
+
+                                <aside>
+                                    <p>You must
+                                        <strong>save, print and sign your temporary driver's licence</strong> at the
+                                        end of
+                                        your
+                                        transaction. If you
+                                        <a href="/page/replace-drivers-licence">lose your temporary&nbsp;driver's
+                                            licence</a>,
+                                        you will have to pay a replacement
+                                        fee.
+                                    </p>
+                                </aside>
+
+                                <!-- section 2-->
+                                <h2 id="section-2">Cost and delivery</h2>
+
+                                <h3>Cost</h3>
+                                <p>$90</p>
+                                <p>The fees may vary if:</p>
+                                <ul>
+                                    <li>you are over 76 years of age</li>
+                                    <li>the expiry date on your driver’s licence is changing to match the expiry date
+                                        on
+                                        your
+                                        health card</li>
+                                </ul>
+                                <p>
+                                    <strong>Note:</strong> the cost for renewing online is the same as renewing at a
+                                    ServiceOntario
+                                    centre.
+                                </p>
+
+                                <h4>Payment</h4>
+                                <p>Visa, MasterCard,&nbsp;or Interac® Online</p>
+
+                                <h3>Delivery</h3>
+                                <p>Your licence will arrive in the mail within
+                                    <strong>4 to 6 weeks</strong>
+                                </p>
+
+
+                                <!-- Section 3-->
+                                <h2 id="section-3">Recently moved or need to change your address</h2>
+                                <p>If you've moved recently, you need to update your address on record with the Ontario
+                                    government.
+                                    You can’t renew your driver’s licence online within 90 days of changing your
+                                    address.</p>
+                                <p>You have two options:</p>
+                                <ol>
+                                    <li>
+                                        <a href="https://www.services.gov.on.ca/sf/index.html?&amp;_ga=2.220647512.1912345659.1521461996-1982957601.1505743178#/oneServiceDetail/127/ip/sr">visit
+                                            a ServiceOntario centre to update both your address, and driver's licence</a>,
+                                        or
                                     </li>
-                                    <li class="ng-scope">
-                                        <a href="#section-1" class="ng-binding">Renew online</a>
-                                    </li>
-                                    <li class="ng-scope">
-                                        <a href="#section-2" class="ng-binding">Cost and delivery</a>
-                                    </li>
-                                    <li class="ng-scope">
-                                        <a href="#section-3" class="ng-binding">Recently moved or need to change your
-                                            address</a>
-                                    </li>
-                                    <li class="ng-scope">
-                                        <a href="#section-4" class="ng-binding">Driver's licence photo</a>
-                                    </li>
-                                    <li class="ng-scope">
-                                        <a href="#section-5" class="ng-binding">Renew an expired, cancelled or
-                                            suspended driver’s licence</a>
-                                    </li>
-                                    <li class="ng-scope">
-                                        <a href="#section-6" class="ng-binding">Sex designation</a>
+                                    <li>
+                                        <a href="/page/change-address-your-drivers-licence-and-health-card">update your
+                                            address online</a>, but you will have to visit a ServiceOntario centre
+                                        to renew your driver's licence
                                     </li>
                                 </ol>
+
+                                <!--Section 4-->
+                                <h2 id="section-4">Driver's licence photo</h2>
+                                <p>You
+                                    <strong>must</strong> take a new driver’s licence photo every 10 years.</p>
+                                <p>You
+                                    <strong>can</strong> also have your photo retaken, at any time, for $35. &nbsp;</p>
+                                <p>Headwear worn for religious or medical reasons can be worn, but must not cover any
+                                    part
+                                    of
+                                    your face. You may be asked to remove any head or face wear (
+                                    <abbr title="for example">e.g.</abbr> eyeglasses) when taking a photo for
+                                    government-issued identification.</p>
+                                <p>If you need a new photo,
+                                    <a href="https://www.services.gov.on.ca/sf/index.html?&amp;_ga=2.58461032.390955488.1521128900-1982957601.1505743178#/oneServiceDetail/127/ip/sr">visit
+                                        a ServiceOntario centre</a>. Please bring:</p>
+
+                                <ul>
+                                    <li>your current driver’s licence</li>
+                                    <li>a personal identification document (verifying your name, date of birth and
+                                        signature)</li>
+                                </ul>
+
+                                <p>A new driver’s licence will be mailed to you within 4 to 6 weeks.</p>
+
+                                <!-- Section 5 -->
+                                <h2 id="section-5">Renew an expired, cancelled or suspended driver’s licence</h2>
+                                <p>If your licence is expired, cancelled or suspended, you cannot renew online.
+                                    <a href="/page/renew-expired-drivers-licence">Learn more about how to renew</a>.</p>
+
+                                <!-- Section 6 -->
+                                <h2 id="section-6">Sex designation</h2>
+
+                                <h3>Change from
+                                    <abbr title="male">M</abbr> to
+                                    <abbr title="female">F</abbr> or
+                                    <abbr title="female">F</abbr> to
+                                    <abbr title="male">M</abbr>
+                                </h3>
+                                <p>To change the sex designation on your driver’s licence from male (
+                                    <abbr>M</abbr>) to female (
+                                    <abbr>F</abbr>) or female (
+                                    <abbr>F</abbr>) to male (
+                                    <abbr>M</abbr>), go to a
+                                    <a href="https://www.ontario.ca/page/serviceontario-locations-hours-and-contact">ServiceOntario
+                                        centre near you</a> and bring an
+                                    <strong>original, valid birth certificate (this includes birth certificate with
+                                        parental information)
+                                        or certified copy of birth registration</strong>.</p>
+
+                                <p>If you don’t have a birth certificate or certified copy of birth registration,
+                                    <a href="https://www.ontario.ca/page/get-or-replace-ontario-birth-certificate">you
+                                        can
+                                        order one online</a>.</p>
+
+                                <p>Learn more about
+                                    <a href="https://www.ontario.ca/page/change-sex-designation-your-government-ids">what
+                                        you need to change your sex designation</a>.</p>
+
+                                <h3>Change to
+                                    <abbr title="gender neurtal">X</abbr>
+                                </h3>
+                                <p>To
+                                    <a href="https://www.ontario.ca/page/change-sex-designation-your-government-ids">change
+                                        the sex designation on your driver’s licence</a> to an
+                                    <abbr title="gender neurtal">X</abbr> (gender neutral),
+                                    <a href="https://www.ontario.ca/page/serviceontario-locations-hours-and-contact">visit
+                                        a ServiceOntario centre</a>. You do not have to bring any supporting documents.</p>
                             </div>
-                            <hr class="thick" id="toc-end">
-                        </div>
-
-                        <div id="pagebody" class="ng-scope">
-                            <h2 id="section-0">What you need to know</h2>
-                            <p>An Ontario driver’s licence is valid for 5 years. You need to renew it every 5 years
-                                either
-                                online (if eligible) or at a ServiceOntario centre.</p>
-                            <p>You will receive a renewal notice in the mail or a reminder by email 60 to 90 days
-                                before
-                                your driver’s licence is set to expire.</p>
-
-                            <h3>If you are over 80</h3>
-                            <p>You will have to renew your licence every 2 years. Your renewal notice will have
-                                information
-                                on:
-                            </p>
-                            <ul>
-                                <li>taking a vision test</li>
-                                <li>completing&nbsp; an in-class screening component</li>
-                                <li>attending a group renewal session</li>
-                            </ul>
-                            <p>If you need a test (vision, written or road), or if you are over 80, you must
-                                <a href="https://drivetest.ca/find-a-drive-test-centre/find_a_drivetest_centre.html?language_id=1&amp;host_id=b4b4a95b-6b58-4ece-9533-bf90fe62bca5#/locations">visit
-                                    a DriveTest centre.</a> Your renewal notice will have the information on any
-                                additional
-                                documents you may require.</p>
-
-                            <p>
-                                <a href="/page/renew-g-drivers-licence-80-years-and-over">Learn more about driver’s
-                                    licence renewals for seniors</a>
-                            </p>
-
-                            <!-- section 1 -->
-                            <h2 id="section-1">Renew online</h2>
-
-                            <p>You can
-                                <strong>renew your driver’s licence online</strong> if:</p>
-
-                            <ul>
-                                <li>you don’t need a new photo (you
-                                    <strong>must</strong> take a new&nbsp;photo every 10 years)</li>
-                                <li>you have a
-                                    <strong>full licence</strong> (G, M class) that isn’t cancelled, suspended, or
-                                    expired for
-                                    more than 12 months</li>
-                                <li>you have a
-                                    <strong>combination class</strong> of G1M, G2M, GM1, GM2, M1 or M2 (only the full
-                                    portion
-                                    will be renewed online)</li>
-                                <li>you haven’t updated your address within the last 90 days</li>
-                                <li>you don’t need tests (vision, written, or road)</li>
-                                <li>you’re not removing a vision condition</li>
-                                <li>you have no new medical conditions that may prevent you from driving</li>
-                                <li>you don’t have outstanding fines</li>
-                            </ul>
-
-                            <p>If you’re not eligible to renew online,
-                                <a href="https://www.services.gov.on.ca/sf/index.html?&amp;_ga=2.200835565.2123879513.1520256248-1982957601.1505743178#/oneServiceDetail/127/ip/sr">visit
-                                    a ServiceOntario centre</a>.</p>
-
-                            <p>To renew online, you need:</p>
-
-                            <ul>
-                                <li>your driver’s licence number</li>
-                                <li>the 7-digit trillium number found on your driver’s licence (
-                                    <abbr title="for example">e.g.</abbr>, *1234567*)</li>
-                                <li>your postal code</li>
-                            </ul>
-                            <p>
-                                <a class="button" href="https://www.services.gov.on.ca/wps85/poc/s2i?uri=s2i:s2iLanding_ohcdlr&amp;lang=en&amp;_ga=2.122301896.2123879513.1520256248-1982957601.1505743178">Renew
-                                    your driver's licence and/or health card online</a>
-                            </p>
-
-                            <p>
-                                <a class="button secondary" href="https://www.services.gov.on.ca/wps85/poc/s2i?uri=s2i:000000021Info&amp;lang=en">Renew
-                                    your driver’s licence only</a>
-                            </p>
-
-                            <aside>
-                                <p>You must
-                                    <strong>save, print and sign your temporary driver's licence</strong> at the end of
-                                    your
-                                    transaction. If you
-                                    <a href="/page/replace-drivers-licence">lose your temporary&nbsp;driver's licence</a>,
-                                    you will have to pay a replacement
-                                    fee.
-                                </p>
-                            </aside>
-
-                            <!-- section 2-->
-                            <h2 id="section-2">Cost and delivery</h2>
-
-                            <h3>Cost</h3>
-                            <p>$90</p>
-                            <p>The fees may vary if:</p>
-                            <ul>
-                                <li>you are over 76 years of age</li>
-                                <li>the expiry date on your driver’s licence is changing to match the expiry date on
-                                    your
-                                    health card</li>
-                            </ul>
-                            <p>
-                                <strong>Note:</strong> the cost for renewing online is the same as renewing at a
-                                ServiceOntario
-                                centre.
-                            </p>
-
-                            <h4>Payment</h4>
-                            <p>Visa, MasterCard,&nbsp;or Interac® Online</p>
-
-                            <h3>Delivery</h3>
-                            <p>Your licence will arrive in the mail within
-                                <strong>4 to 6 weeks</strong>
-                            </p>
-
-
-                            <!-- Section 3-->
-                            <h2 id="section-3">Recently moved or need to change your address</h2>
-                            <p>If you've moved recently, you need to update your address on record with the Ontario
-                                government.
-                                You can’t renew your driver’s licence online within 90 days of changing your address.</p>
-                            <p>You have two options:</p>
-                            <ol>
-                                <li>
-                                    <a href="https://www.services.gov.on.ca/sf/index.html?&amp;_ga=2.220647512.1912345659.1521461996-1982957601.1505743178#/oneServiceDetail/127/ip/sr">visit
-                                        a ServiceOntario centre to update both your address, and driver's licence</a>,
-                                    or
-                                </li>
-                                <li>
-                                    <a href="/page/change-address-your-drivers-licence-and-health-card">update your
-                                        address online</a>, but you will have to visit a ServiceOntario centre
-                                    to renew your driver's licence
-                                </li>
-                            </ol>
-
-                            <!--Section 4-->
-                            <h2 id="section-4">Driver's licence photo</h2>
-                            <p>You
-                                <strong>must</strong> take a new driver’s licence photo every 10 years.</p>
-                            <p>You
-                                <strong>can</strong> also have your photo retaken, at any time, for $35. &nbsp;</p>
-                            <p>Headwear worn for religious or medical reasons can be worn, but must not cover any part
-                                of
-                                your face. You may be asked to remove any head or face wear (
-                                <abbr title="for example">e.g.</abbr> eyeglasses) when taking a photo for
-                                government-issued identification.</p>
-                            <p>If you need a new photo,
-                                <a href="https://www.services.gov.on.ca/sf/index.html?&amp;_ga=2.58461032.390955488.1521128900-1982957601.1505743178#/oneServiceDetail/127/ip/sr">visit
-                                    a ServiceOntario centre</a>. Please bring:</p>
-
-                            <ul>
-                                <li>your current driver’s licence</li>
-                                <li>a personal identification document (verifying your name, date of birth and
-                                    signature)</li>
-                            </ul>
-
-                            <p>A new driver’s licence will be mailed to you within 4 to 6 weeks.</p>
-
-                            <!-- Section 5 -->
-                            <h2 id="section-5">Renew an expired, cancelled or suspended driver’s licence</h2>
-                            <p>If your licence is expired, cancelled or suspended, you cannot renew online.
-                                <a href="/page/renew-expired-drivers-licence">Learn more about how to renew</a>.</p>
-
-                            <!-- Section 6 -->
-                            <h2 id="section-6">Sex designation</h2>
-
-                            <h3>Change from
-                                <abbr title="male">M</abbr> to
-                                <abbr title="female">F</abbr> or
-                                <abbr title="female">F</abbr> to
-                                <abbr title="male">M</abbr>
-                            </h3>
-                            <p>To change the sex designation on your driver’s licence from male (
-                                <abbr>M</abbr>) to female (
-                                <abbr>F</abbr>) or female (
-                                <abbr>F</abbr>) to male (
-                                <abbr>M</abbr>), go to a
-                                <a href="https://www.ontario.ca/page/serviceontario-locations-hours-and-contact">ServiceOntario
-                                    centre near you</a> and bring an
-                                <strong>original, valid birth certificate (this includes birth certificate with
-                                    parental information)
-                                    or certified copy of birth registration</strong>.</p>
-
-                            <p>If you don’t have a birth certificate or certified copy of birth registration,
-                                <a href="https://www.ontario.ca/page/get-or-replace-ontario-birth-certificate">you can
-                                    order one online</a>.</p>
-
-                            <p>Learn more about
-                                <a href="https://www.ontario.ca/page/change-sex-designation-your-government-ids">what
-                                    you need to change your sex designation</a>.</p>
-
-                            <h3>Change to
-                                <abbr title="gender neurtal">X</abbr>
-                            </h3>
-                            <p>To
-                                <a href="https://www.ontario.ca/page/change-sex-designation-your-government-ids">change
-                                    the sex designation on your driver’s licence</a> to an
-                                <abbr title="gender neurtal">X</abbr> (gender neutral),
-                                <a href="https://www.ontario.ca/page/serviceontario-locations-hours-and-contact">visit
-                                    a ServiceOntario centre</a>. You do not have to bring any supporting documents.</p>
                         </div>
                     </div>
-                </div>
-                <!-- end of left side -->
-                <div class="large-4 medium-12 columns">
-                    <h2 class="show-for-sr ng-binding">
-                        Related information
-                    </h2>
-
-                    <ul class="sticky accordion">
-                        <h2 class="h6 sidebar ng-binding ng-scope">
-                            Related
+                    <!-- end of left side -->
+                    <div class="large-4 medium-12 columns">
+                        <h2 class="show-for-sr ng-binding">
+                            Related information
                         </h2>
-                        <div class="left-padding right-padding small ng-scope">
-                            <div class="ng-scope">
-                                <p>
-                                    <a href="/page/renew-drivers-licence-outside-ontario">Renew a driver's licence
-                                        outside Ontario</a>
-                                </p>
-                                <p>
-                                    <a href="/page/get-g-drivers-licence-new-drivers">First-time driver: get a licence</a>
-                                </p>
-                                <p>
-                                    <a href="/page/enhanced-drivers-licence">Upgrade to an enhanced driver’s licence</a>
-                                </p>
-                                <p>
-                                    <a href="/page/replace-drivers-licence">Replace a lost, stolen or damaged driver’s
-                                        licence</a>
-                                </p>
-                                <p>
-                                    <a href="/page/reinstate-suspended-drivers-licence">Reinstate your driver’s licence</a>
-                                </p>
+
+                        <ul class="sticky accordion">
+                            <h2 class="h6 sidebar ng-binding ng-scope">
+                                Related
+                            </h2>
+                            <div class="left-padding right-padding small ng-scope">
+                                <div class="ng-scope">
+                                    <p>
+                                        <a href="/page/renew-drivers-licence-outside-ontario">Renew a driver's licence
+                                            outside Ontario</a>
+                                    </p>
+                                    <p>
+                                        <a href="/page/get-g-drivers-licence-new-drivers">First-time driver: get a
+                                            licence</a>
+                                    </p>
+                                    <p>
+                                        <a href="/page/enhanced-drivers-licence">Upgrade to an enhanced driver’s
+                                            licence</a>
+                                    </p>
+                                    <p>
+                                        <a href="/page/replace-drivers-licence">Replace a lost, stolen or damaged
+                                            driver’s
+                                            licence</a>
+                                    </p>
+                                    <p>
+                                        <a href="/page/reinstate-suspended-drivers-licence">Reinstate your driver’s
+                                            licence</a>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </main>
 

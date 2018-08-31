@@ -25,21 +25,6 @@
         $('.in-this-section a span').toggleClass('open')
     })
 
-    // $('#osap-help-button').on('click', function() {
-    //     $(".osap-help-menu").toggleClass("hide");
-    //     $(".osap-account-menu").addClass("hide");
-    // })
-
-    // $('#osap-account-button').on('click', function() {
-    //     $(".osap-account-menu").toggleClass("hide");
-    //     $(".osap-help-menu").addClass("hide");
-    // })
-
-    // $('#osap-nav > ul > li > a').on('click', function() {
-    //     $("#osap-nav ul.sub-nav-osap.open").removeClass('open')
-    //     $(this).next().toggle();
-    // })
-
     $('#osap-account').on('click', function() {
         $("#help").parent().find('.sub-nav-osap').hide();
         $(this).parent().find('.sub-nav-osap').toggle();
@@ -58,4 +43,47 @@
         $('#osap-nav-mobile').toggle();
     })
 
- })();
+    //search functionality
+    $('#search-ontario-ca').on('click', function() {
+        $('#specific-page').hide();
+        $('#ontario-ca').show();
+        $('#search-specific-page').removeClass('active')
+        $(this).addClass('active');
+
+    })
+
+    $('#search-specific-page').on('click', function() {
+        $('#ontario-ca').hide();
+        $('#specific-page').show();
+        $('#search-ontario-ca').removeClass('active');
+        $(this).addClass('active');
+    })
+
+    var items = [];
+    //setting search in local storage
+    $('#header-submit').on('click', function() {
+        var searchInput = $("#header-search-input").val();
+        var previousPage = $('.breadcrumbs .current a').text();
+        // items.push(searchInput, previousPage);
+        // localStorage.setItem("item", JSON.stringify(items));
+        localStorage.setItem('searchTerm', searchInput);
+        localStorage.setItem('pageName', previousPage);
+        window.location.href = "file:///Users/carrieme/Documents/ODS/ODS-labs/feature-nav/pages/search.html"
+        console.log(searchInput)
+        if (searchInput.val() === '') {
+            $('search-title').text('No Search Term Entered!')
+        }
+    });
+
+
+    //setting search page parameters
+    var localStorageSearchTerm = localStorage.getItem('searchTerm');
+    var localStoragePreviousPage = localStorage.getItem('pageName');
+    $('#search-title-term').text(localStorageSearchTerm);
+    if (localStoragePreviousPage === '') {
+        $('#search-specific-page').hide();
+    } else {
+        $('#specific-page-term').text(localStoragePreviousPage);
+    }
+
+})();
